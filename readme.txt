@@ -6,3 +6,5 @@ git remote add origin https://github.com/vvu2014/test.git
 git push -u origin master
 
 git branch
+
+git revert  test
