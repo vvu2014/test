@@ -11,5 +11,3 @@ git revert  test
 
 
 git reset  test
-
-git test
