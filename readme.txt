@@ -8,3 +8,6 @@ git push -u origin master
 git branch
 
 git revert  test
+
+
+git reset  test
