@@ -11,3 +11,5 @@ git revert  test
 
 
 git reset  test
+
+git checkout commitid -b branchname
