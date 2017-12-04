@@ -91,3 +91,5 @@ git show <tagname> 可以看到说明文字，默认标签是打在最新提交�
 git push origin <tagname> 推送某个标签到远程， 打标签的时候自动标注该标签为release版本
 git push origin --tags 一次性推送全部尚未推送到远程的本地标签
 ******************************************
+
+git branch2 test
