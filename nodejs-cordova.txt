@@ -1,0 +1,541 @@
+*************************************************
+ionic
+*************************************************
+ionic plugin add cordova-plugin-wechat --variable wechatappid=wxe13aec3139fc33a9 --save
+
+
+************************************************
+1.安装nodejs（解析器、虚拟机）
+创造NodeJS的目的是为了实现高性能Web服务器，他首先看重的是事件机制和异步IO模型的优越性，而不是JS。但是他需要选择一种编程语言实现他的想法，这种编程语言不能自带IO功能，并且需要能良好支持事件机制。JS没有自带IO功能，天生就用于处理浏览器中的DOM事件，并且拥有一大群程序员，因此就成为了天然的选择。
+Node.js事实上就是另外一种上下文，它允许在后端（脱离浏览器环境）运行JavaScript代码。要实现在后台运行JavaScript代码，代码需要先被解释然后正确的执行。Node.js的原理正是如此，它使用了Google的V8虚拟机（Google的Chrome浏览器使用的JavaScript执行环境），来解释和执行JavaScript代码。
+
+node-vxxx-x64.msi
+添加环境变量
+node -v
+
+npm -v
+
+
+2.安装cordova
+http://cordova.apache.org/docs/en/latest/guide/overview/index.html
+
+2.1
+开源移动框架，使用web技术hmtl5，css3和javacript进行跨平台开发。
+Cordova提供了一组设备相关的API，通过这组API，移动应用能够以JavaScript访问原生的设备功能，如摄像头、麦克风等。Cordova还提供了一组统一的JavaScript类库，以及为这些类库所用的设备相关的原生后台代码。CLI（cordova命令行界面）允许同时编译多个平台的工程。
+
+
+2.2架构图（webview、web app、plugin）
+跨平台、以某个平台为中心的开发方式
+跨平台可以切换为某特定平台开发方式，但不能再次切换回来，因为跨平台维护一个通用的代码集合。
+
+2.3
+//windows下，-g tells npm to install cordova globally. 否则会安装在当前工作目录的node_modules子目录下。
+npm install -g  cordova
+//mac下
+$ sudo npm install -g cordova
+
+//release build
+ionic cordova build android --release 
+//gradle
+
+
+cordova -v
+cordova create <工程路径> <id> <工程名> 
+cordova platform add android  
+cordova platform build android  
+
+cordova plugin list
+cordova plugin add <插件完全限定名>
+
+2.4 创建cordova app
+2.4.1 安装cordova命令行界面CLI
+npm install -g cordova
+
+2.4.2 创建工程
+	2.4.2.1 
+	create HelloCordova com.qmzs.hellocordova CordovaHello
+	<name>CordovaHello</name>：显示在手机home或者appstore上的名称
+	id="com.qmzs.hellocordova"
+	目工作录F:\code-test\HelloCordova
+	
+	2.4.2.2 
+	cordova platform add android --save	//--save到config.xml <engine name="android" spec="~6.1.2" />
+	
+	2.4.2.3 
+	cordova build android(可在android studio编译)
+	
+	2.4.2.3 
+	cordova emulate/run android
+	
+ 
+ 2.5 命令
+ 2.5.1 全局命令
+ create、help、telemetry
+ 
+ 2.5.2 project命令
+ platform、compile、run、serve、clean
+ 
+ 2.6目录结构
+ config.xml：全局配置文件http://cordova.apache.org/docs/en/latest/config_ref/index.html
+ platforms/：平台相关代码和build脚本
+ plugins/：插件
+ hooks/：定制cordova脚本
+ merges/：平台定制
+ 
+ 
+ 2.7 平台定制
+ 场景：android平台字体大小14，其他平台12，做法如下：
+  1. www/index.html添加 <link rel="stylesheet" type="text/css" href="css/overrides.css" />
+  2. 创建空文件www/css/overrides.css，防止非android平台文件缺失
+  3. 创建目录和文件/merges/android/overrides.css, overrides.css内容：body { font-size:14px; }
+  4. rebuild
+  
+ 2.8 plugin
+ cordova plugin search camera	// 搜索插件页面，比如跟camera有关的插件
+ cordova plugin add cordova-plugin-camera --save //--save到config.xml <plugin name="cordova-plugin-camera" spec="~2.4.0" />
+ 
+
+ 2.9 升级 
+ npm update -g cordova	//全部升级
+ cordova platform update android --save	//指定平台升级
+ 
+ 2.10 apk签名 
+
+ 1. cordova run android --release -- --keystore=../my-release-key.keystore --storePassword=password --alias=alias_name --password=password
+ 2. 或者build.json
+ 3. 或者使用Gradle
+ 
+ 2.11 android studio打开cordova工程
+ 建议不要在studio编辑代码，会影响platform下的代码，只编辑www下的文件，然后用cordova build自动拷贝改变的部分。
+ Plugin developers wishing to edit their native code in the IDE should use the --link flag when adding their plugin to the project via cordova plugin add. This will link the files so that changes to the plugin files in the platforms folder are reflected in your plugin's source folder (and vice versa).
+ 
+ 2.12 生命周期
+ 低内存时， “开发者选项”->不保留活动测试cordova app，需要左一些数据保存处理。
+
+In contrast, Cordova applications on the Android platform are executed within a Webview that is embedded in a single Android activity. 
+Native Android apps一般有多个activity，相反，在android平台上，cordova app运行在单个activity的Webview中。
+
+
+ 2.13 cordova-plugin-whitelist
+	By default, navigations only to file:// URLs, are allowed. To allow others URLs, you must add <allow-navigation> tags to your config.xml。
+	
+2.14 插件
+	js-module	指js文件名，而这个文件会自动以`<script`>标签的形式添加到Cordova项目的起始页。通过在*js-module*中列出插件，可以减少开发者的工作。*clobbers*元素说明了*module.exports*自动添加到*window*对象，让插件方法能够在窗口级别使用。
+	
+	cordova.exec(successCallback, errorCallback, 'Pluginobject', 'pluginMethod', [arguments]);
+successCallback和errorCallback参数是插件方法调用成功或失败时执行的函数名。'Pluginobject'参数是一个字符串用于识别包括被调用方法的native对象，'pluginMethod'参数是一个字符串，用来识别要执行的方法，最后的'arguments'是一个可选的参数数组，用来传递给pluginMethod。
+
+********************************************
+**
+*********************************************
+3. Javascript
+
+JavaScript中，函数和其他变量一样都是可以被传递的。
+
+4. 总的
+AngularJS
+ionic
+html5
+css3
+cordova
+nodejs
+
+//angular5.0环境
+npm cache clean  --force	or npm cache verify
+npm i -g cnpm 
+cnpm i -g @angular/cli  //这一步后才能ng serve -o
+cnpm install  
+ng serve -o
+
+//提交svn前清理
+for /f %i in (non-essential-files.txt) do del %i /F /S /Q
+rd .git /s /q
+rd e2e /s /q
+
+5. npm升级
+npm install npm -g
+
+Node 自带了交互式解释器REPL
+ctrl + c - 退出当前终端
+ctrl-c 按两次Node REPL
+
+utf-8 是默认的编码方式，此外它同样支持以下编码："ascii", "utf8", "utf16le", "ucs2", "base64" 和 "hex"。
+在浏览器JavaScript 中，通常window 是全局对象， 而Node.js 中的全局对象是 global，所有全局变量（除了 global 本身以外）都是 global 对象的属性。
+我们在Node.js 中能够直接访问到对象通常都是 global 的属性，如 console、process 等
+
+6.AngularJS：
+AngularJS 是一个 JavaScript 框架。它可通过 <script> 标签添加到 HTML 页面。AngularJS通过指令扩展了HTML，并且通过表达式绑定数据到 HTML。AngularJS已经被用于Google的多款产品当中。
+
+AngularJS 应用组成如下：
+View(视图), 即 HTML。
+Model(模型), 当前视图中可用的数据。
+Controller(控制器), 即 JavaScript 函数，可以添加或修改属性。
+
+7. ionic
+ionic start IonicPro tutorial --v2
+cd IonicPro
+ionic serve
+ionic platform add android
+ionic build android
+
+//常用命令
+npm install -g cnpm --registry=https://registry.npm.taobao.org（npm镜像源指向淘宝） 
+cnpm install -g cordova ionic（安装cordova ionic） 
+cnpm update -g cordova ionic（更新cordova ionic） 
+ionic -help（查看帮助） 
+ionic -v（查看版本） 
+
+ionic start myApp blank（空项目） 
+ionic start myApp tabs（带导航条） 
+ionic start myApp sidemenu（带侧滑菜单） 
+
+ionic platform add android（添加android平台） 
+ionic platform remove android（移除android平台） 
+ionic build android（编译项目apk） 
+ionic emulate android（运行项目apk 手机连接在手机运行 模拟器连接在模拟器运行） 
+ionic run android （相当于build + emulate） 
+ionic serve（开启服务调试） 
+
+
+**************************
+当提示工程不是ionic工程时：npm i
+
+ionic g page YourPageName //创建新页面
+ionic g directive YourPageName //创建指令
+ionic g component YourComponentName //创建组件
+ionic g provider YourProviderName //创建服务
+ionic g pipe YourPipeName //创建过滤器
+**************************
+
+8. 安装typescript
+npm install -g typescript
+
+
+9. CLASSPATH
+CLASSPATH的作用: classpath是指定你在程序中所使用的类（.class）文件所在的位置，就如在引入一个类时：import javax.swing.JTable这句话是告诉编译器要引入javax.swing这个包下的JTable类，而classpath就是告诉编译器该到哪里去找到这个类
+（前提是你在classpath中设置了这个类的路径）；如果你想要编译在当前目录下找，就加上“.”,如：.;C:\Program Files\Java\jdk\,这样编译器就会到当前目录和C:\Program Files\Java\jdk\去找javax.swing.JTable这个类；还提下：大多数人都是用Eclipse写程序，不设classpath也没关系，因为Eclipse有相关的配置；
+
+path与CLASSPATH 的区别：path是用来搜索所执行的可执行文件路径的，如果执行的可执行文件不在当前目录下，那就会依次搜索path中设置的路径。
+而CLASSPATH是用来告诉编辑器在那里寻找Java编译过程中所需的包和类所以其路径中配置的是lib目录下的tools.jar;
+
+Set the JAVA_HOME environment variable to the location of your JDK installation
+Set the ANDROID_HOME environment variable to the location of your Android SDK installation
+It is also recommended that you add the Android SDK's tools and platform-tools directories to your PATH
+
+10. ADT插件
+ADT插件，这个插件能让Eclipse和Android SDK关联起来.
+
+********************************************************
+**
+********************************************************
+cordova run --list 查看AVD
+cordova platform ls	查看cordova和平台版本信息
+
+
+ctrl+shit+i chrome 移动app开发
+
+
+11. ionic 添加带模块的页面
+注册：license serve->http://idea.iteblog.com/key.php
+不要编译工程，否则www底下会有改变
+ionic g page mypage
+pages/my-page/my-page.module.ts修改：IonicModule.forChild(MyPage)->IonicPageModule.forChild(MyPage),
+src/app/app.module.ts修改：imports添加MyPageModule
+
+12. intelij idea 
+代码收缩和展开 ctrl + 减号， 折叠所有的快捷键设置成：ctrl+shift+减号。
+
+50.  windows字符集
+tchar.h: _T _TEXT _UNICODE	运行期
+winnt.h: TEXT UNICODE
+ansi->dbcs->mbcs->unicode
+strcpy->wcscpy->_tcscpy
+LPCSTR->LPCWSTR->LPCTSTR
+
+CString 和 LPCTSTR 基本可以通用	//operator LPCTSTR() {......} 和CString（LPCTSTR）
+CString 转换到 LPTSTR (char*), 预定的做法是调用CString的GetBuffer函数，使用完毕之后一般都要再调用ReleaseBuffer函数来确认修改 (某些情况下也有不调用ReleaseBuffer的，同样你需要非常明确为什么这么做时才能这样处理，一般应用环境可以不考虑这种情况)。
+　　同时需要注意的是， 在GetBuffer 和 ReleaseBuffer之间，CString分配了内存交由你来处理，因此不能再调用其他的CString函数。
+　　CString 转LPCTSTR:
+　　CString cStr;
+　　const char *lpctStr=(LPCTSTR)cStr;
+　　LPCTSTR转CString:
+　　LPCTSTR lpctStr;
+　　CString cStr=lpctStr;
+
+GetBuffer通常是我们希望用到cstring类的字符串的指针，通常传0，如果对返回的指针指向的内容没有修改的话，
+就不需要调用ReleaseBuffer了，如果修改了这个指针指向的内容，就需要调用ReleaseBuffer了，通常传-1，即重新设置buffer长度为字符串的lengh
+
+	CString abc = _T("abcdefg");
+	LPTSTR str = abc.GetBuffer(0);
+	str[3] = '\0';					//修改后必须调用ReleaseBuffer，否则长度和显示的内容大小不一致
+	//abc.ReleaseBuffer();			//注释的话，length1=7， length2=16， abc只显示“abc”；打开的话，length1=3， length2=12， abc只显示“abc123456789”
+	int length1 = abc.GetLength();
+	abc += _T("123456789");
+	int length2 = abc.GetLength();
+	
+	CString abc1;
+	LPTSTR str = abc1.GetBuffer(100);
+	int length0 = abc1.GetLength();	//length0 == 0,只有修改str的内容并ReleaseBuffer后，length0才大于0
+	
+	//UTF-8用1到6个字节编码Unicode字符,UTF-16比起UTF-8，好处在于大部分字符都以固定长度的字节 (2字节) 储存，但UTF-16却无法兼容于ASCII编码。
+	Unicode是一个字符集，UTF-8,UTF-16,UTF-32都是这个字符集上的编码方式。而ASCII，GBK等都是其它字符集，
+	他们由于没有像Unicode这样将编码和抽象表示解耦，所以默认都只有一个对应的编码方式。
+	
+	TCHAR buf[100] = {0};
+	swprintf(buf, L"%s", "aa");	//ansi->unicode
+	
+	对unicode字符串操作的函数如：lstrcmp\lstrlen,依赖UNICODE宏
+	
+	BSTR和OLECHAR的交换？答案是COM提供了两个BSTR分配用的API：SysAllocString / SysReallocString。函数返回的指针指向BSTR的第一个字符，而不是BSTR在内存的第一个字节。
+	不要把BSTR直接初始化成常量字符指针，例如，BSTR bs = L””。
+
+12. css选择器
+元素、类型	a{color:red;}							<a></a>
+分组		h2, p {color:gray;}						逗号隔开
+声明		h1 {color: white; background: black;}	分号隔开
+id			#red{color:red;} 						<a id="red"></a>
+类  		.red{color:red;}						<a class="red"></a>
+属性		input[type="text"]{width:150px;}		<input type="text"></input> 可加~、$、*、^
+
+后代元素	h1 em {color:red;}						会把作为 h1 元素后代的 em 元素的文本变为红色，可以深嵌套，也叫包含选择器
+子元素		h1 > strong {color:red;}				选择只作为 h1 元素子元素的 strong 元素，可认为是后代选择器的子集
+相邻兄弟	h1 + p {margin-top:50px;}				选择紧接在 h1 元素后出现的段落，h1 和 p 元素拥有共同的父元素
+派生 												包含子元素、后代元素、相邻兄弟
+
+伪类		a:visited {color: #00FF00}				已访问的链接
+伪元素		p:first-line{color:#ff0000;}			对 p 元素的第一行文本进行格式化
+
+
+13. angular4安装
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install -g @angular/cli
+npm install
+ng serve -o
+ng build --prod --aot	//angular 发布版本加--prod --aot
+//ionic build --prod --aot
+
+ng g component ArrowKey
+
+14. 最佳单例模式 线程安全 退出程序自动析构
+template<class 
+class CSingletonBase
+{
+public:
+	static T& GetInstance()
+	{
+		return s_pInstance;
+	}
+
+protected:
+	CSingletonBase(void){}
+	~CSingletonBase(void){}
+
+private:
+	static T s_pInstance;	//主线程之前已经创建并初始化好
+
+	CSingletonBase(const CSingletonBase&) {};
+	CSingletonBase& operator=(const CSingletonBase&) {};
+};
+
+template<class T>
+T CSingletonBase<T>::s_pInstance;
+
+//使用
+class CFloatKeyManager : public CSingletonBase<CFloatKeyManager>
+{
+	friend class CSingletonBase<CFloatKeyManager>;	//访问protected  CFloatKeyManager();
+protected:
+	CFloatKeyManager();
+	~CFloatKeyManager(); 
+
+
+*************************************************************************************************
+*************************************************************************************************
+15. fair.game
+git pull之前 git stash 这样本地的所有修改就都被暂时存储起来 。是用git stash list可以看到保存的信息：
+
+git pull
+
+git stash pop stash@{0}
+
+Auto-merging c/environ.c
+CONFLICT (content): Merge conflict in c/environ.c	//可能有冲突
+
+
+************************************
+********修改git commit 最后一次提交的注释信息 以及如何退出git bash vim编辑器
+
+git commit -m “注释”提交的时候，注释写错了
+
+首先使用 git commit --amend 命令，（修改最近一次提交的注释信息），会进入到vim 编辑器
+
+然后 你会发现编辑器里你怎么输入都没反应，这是因为vim处在不可编辑状态，按下字母键 c，此时进入编辑状态，可以开始修改注释信息了
+
+在然后 你会发现你怎么都退出不了，回到shell了，然后操作如下： ESC  --》 退出编辑状态；接着 连续按两次大写字母键 Z，接着你会惊喜的发现，终于保存好退出来了！
+
+总结：
+git stash
+git pull
+git stash pop stash@{0}	//git stash list 查看暂存列表
+修改冲突
+git add
+git commit -m //git commit --amend修改错误提示
+git push
+
+git log --graph	//查看分支合并图
+https://101.201.236.144/
+
+
+*************************
+1612-286 1326*1326*118  1758276*118 207476758
+11216920
+
+***********************
+**
+对工作区中文件的修改分为三种情况：
+
+（1）修改，但没有用git add将修改添加到暂存区；
+
+（2）修改，已经使用git add将修改添加到暂存区；
+
+（3）修改，已经使用git add将修改添加到暂存区，并再次进行修改。
+
+对于第一种情况，直接使用git checkout -- 文件，即可撤销修改，撤销修改就回到和版本库一模一样的样子。
+
+第二种情况，先使用git reset HEAD -- 文件，然后在使用git checkout -- 文件进行修改撤销。
+
+第三种情况 先使用git checkout -- 文件，文件就会变成添加到暂存区后的状态，也就转换成了“第二种情况”，然后，在使用情况（2）中的处理方法，即可将文件恢复到与版本库一致的状态。
+
+总之，记住一点：“git checkout -- 文件”命令，撤销的是工作中文件的修改，而“git reset HEAD -- 文件”命令，撤销的是暂存区中文件的修改。
+
+*************************
+*****ng install后，登录加密依赖 keythereum crypto-browserify*****
+
+******************************************
+******************************************
+commit id从0开始计算
+// 回退到上一个commit版本, HEAD严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支。
+$ git reset --hard HEAD^
+HEAD is now at ea34578 add distributed
+
+git reset --hard 3628164回退到某个版本
+
+git reflog用来记录你的每一次命令
+
+提交后，用git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
+
+git branch命令会列出所有分支，当前分支前面会标一个*号
+
+git log --graph --pretty=oneline --abbrev-commit 分支合并查看
+
+git merge --no-ff -m "" branch-name 参数就可以用普通模式合并,并后的历史有分支，能看出来曾经做过合并,而fast forward看不出
+git tag <tag name>		在某分支打标签， git tag也可以查看所有标签
+git show <tagname>or<commit id>	查看标签信息，标签是按字母顺序， git show可以查看某个commitid对应的修改记录
+如果要推送某个标签到远程，使用命令git push origin <tagname>
+git check-ignore 查看到底哪个规则写错，git check-ignore -v App.class，App.class本来是要add，但是比配了忽略文件
+
+git-revert - Revert some existing commits。如果使用默认的注释，可以在命令中加上--no-edit参数
+git revert 是生成一个新的提交来撤销某次提交，此次提交之前的commit都会被保留，
+git revert HEAD~0是撤销最新的commit，不会有冲突，但是HEAD~1以后的可能会有冲突
+
+
+git-reset - Reset current HEAD to the specified state。
+git reset：1. 文件从暂存区回退到工作区 2. 版本回退 
+git reset HEAD filename ：回退文件（不能使用--soft），将文件从暂存区回退到工作区　　　
+soft 参数：git reset --soft HEAD～1 意为将版本库软回退1个版本，所谓软回退表示将本地版本库的头指针全部重置到指定版本，且将这次提交之后的所有变更都移动到暂存区
+
+默认的mixed参数： git reset HEAD～1 意为将版本库回退1个版本，将本地版本库的头指针全部重置到指定版本，且会重置暂存区，即这次提交之后的所有变更都移动到未暂存阶段
+
+hard参数：git reset --hard HEAD～1 意为将版本库回退1个版本，但是不仅仅是将本地版本库的头指针全部重置到指定版本，也会重置暂存区，并且会将工作区代码也回退到这个版本 
+
+git remote命令列出所有远程主机 ,使用-v选项，可以参看远程主机的网址。
+git remote show <主机名>
+
+git checkout -b local-branch-name origin/branch-name 拉取远程某分支代码，创建并切换到分支branch-name
+git checkcout -b local-branch-name  在当前分支创建并切换到新分支
+git checkcout commitid -b local-branch-name  在当前分支的某个历史提交点基础上创建并切换到新分支
+git merge branchname合并分支到当前分支
+git push origin local-branch-name 在分支下提交代码到远程仓库，不能只Git push，要指定远程分支名称
+git log --graph --pretty=oneline --abbrev-commit 查看分支合并情况
+
+git tag -a v0.1 -m "version 0.1 released" 3628164 带有说明的标签，用-a指定标签名，-m指定说明文字
+git show <tagname> 可以看到说明文字
+git push origin <tagname> 推送某个标签到远程， 打标签的时候自动标注该标签为release版本
+git push origin --tags 一次性推送全部尚未推送到远程的本地标签
+
+******************************************
+js原型
+******************************************
+构造函数:
+function Person(name, age, job) {
+ this.name = name;
+ this.age = age;
+ this.job = job;
+ this.sayName = function() { alert(this.name) } 
+}
+var person1 = new Person('Zaxlct', 28, 'Software Engineer');
+
+
+每个函数对象都有一个prototype 属性,这个属性指向函数的原型对象。
+person1.constructor == Person
+Person.prototype.constructor == Person
+person1.__proto__ == Person.prototype
+
+person1 为什么有 constructor 属性？那是因为 person1 是 Person 的实例。
+同理， Person.prototype （你把它想象成 A） 也是Person 的实例。
+
+原型对象其实就是普通对象（但Function.prototype除外，它是函数对象，但它很特殊，他没有prototype属性
+（前面说道函数对象都有prototype属性））
+
+结论：原型对象（Person.prototype）是 构造函数（Person）的一个实例。
+
+function Person(){};
+ console.log(Person.prototype) //Person{}
+ console.log(typeof Person.prototype) //Object
+ console.log(typeof Function.prototype) // Function，这个特殊
+ console.log(typeof Object.prototype) // Object
+ console.log(typeof Function.prototype.prototype) //undefined
+
+JS 在创建对象（不论是普通对象还是函数对象）的时候，都有一个叫做__proto__ 的内置属性，用于指向创建它的构造函数的原型对象。
+对象 person1 有一个 __proto__属性，创建它的构造函数是 Person，构造函数的原型对象是 Person.prototype ，所以：
+person1.__proto__ == Person.prototype
+
+Function对象作为一个函数，就会有prototype属性，该属性将对应”function () {}”对象。
+Function对象作为一个对象，就有__proto__属性，该属性对应”Function.prototype”，也就是说，”Function._proto_ === Function.prototype”。
+
+var o = {};
+  console.log(o.prototype); //undefined
+  console.log(o instanceof Object); //true
+  console.log(o.__proto__ === Object.prototype) //true
+  console.log(Object === Object.prototype.constructor) //true 
+  console.log(Object.prototype.constructor) //function Object()
+　console.log(Object.prototype.__proto__); //null
+
+function Demo(){};
+  var f1 = new Demo();
+  console.log(f1.prototype); //undefined
+  console.log(f1 instanceof Demo); //true
+  console.log(f1.__proto__ === Demo.prototype); //true
+  console.log(Demo === Demo.prototype.constructor) ;//true
+  console.log(Demo.prototype.__proto__ === Object.prototype) ;//true
+  console.log(Object.prototype.__proto__); //null
+
+function f1(){};  ==  var f1 = new Function();
+function f2(a,b){
+  alert(a+b);
+}
+等价于var f2 = new Function(a,b,"alert(a+b)");
+
+总结：
+1. 所有的对象都有__proto__属性，该属性对应该对象的原型.
+2. 所有的函数对象都有prototype属性，该属性的值会被赋值给该函数创建的对象的_proto_属性.
+3. 所有的原型对象都有constructor属性，该属性对应创建所有指向该原型的实例的构造函数.
+4. 函数对象和原型对象通过prototype和constructor属性进行相互关联.
+
+第一种是==比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果。
+第二种是===比较，它不会自动转换数据类型，如果数据类型不一致，返回false，如果一致，再比较。
+JavaScript把null、undefined、0、NaN和空字符串''视为false，其他值一概视为true。
+
+******************************************
+
