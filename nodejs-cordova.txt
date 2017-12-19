@@ -5,33 +5,33 @@ ionic plugin add cordova-plugin-wechat --variable wechatappid=wxe13aec3139fc33a9
 
 
 ************************************************
-1.°²×°nodejs£¨½âÎöÆ÷¡¢ĞéÄâ»ú£©
-´´ÔìNodeJSµÄÄ¿µÄÊÇÎªÁËÊµÏÖ¸ßĞÔÄÜWeb·şÎñÆ÷£¬ËûÊ×ÏÈ¿´ÖØµÄÊÇÊÂ¼ş»úÖÆºÍÒì²½IOÄ£ĞÍµÄÓÅÔ½ĞÔ£¬¶ø²»ÊÇJS¡£µ«ÊÇËûĞèÒªÑ¡ÔñÒ»ÖÖ±à³ÌÓïÑÔÊµÏÖËûµÄÏë·¨£¬ÕâÖÖ±à³ÌÓïÑÔ²»ÄÜ×Ô´øIO¹¦ÄÜ£¬²¢ÇÒĞèÒªÄÜÁ¼ºÃÖ§³ÖÊÂ¼ş»úÖÆ¡£JSÃ»ÓĞ×Ô´øIO¹¦ÄÜ£¬ÌìÉú¾ÍÓÃÓÚ´¦Àíä¯ÀÀÆ÷ÖĞµÄDOMÊÂ¼ş£¬²¢ÇÒÓµÓĞÒ»´óÈº³ÌĞòÔ±£¬Òò´Ë¾Í³ÉÎªÁËÌìÈ»µÄÑ¡Ôñ¡£
-Node.jsÊÂÊµÉÏ¾ÍÊÇÁíÍâÒ»ÖÖÉÏÏÂÎÄ£¬ËüÔÊĞíÔÚºó¶Ë£¨ÍÑÀëä¯ÀÀÆ÷»·¾³£©ÔËĞĞJavaScript´úÂë¡£ÒªÊµÏÖÔÚºóÌ¨ÔËĞĞJavaScript´úÂë£¬´úÂëĞèÒªÏÈ±»½âÊÍÈ»ºóÕıÈ·µÄÖ´ĞĞ¡£Node.jsµÄÔ­ÀíÕıÊÇÈç´Ë£¬ËüÊ¹ÓÃÁËGoogleµÄV8ĞéÄâ»ú£¨GoogleµÄChromeä¯ÀÀÆ÷Ê¹ÓÃµÄJavaScriptÖ´ĞĞ»·¾³£©£¬À´½âÊÍºÍÖ´ĞĞJavaScript´úÂë¡£
+1.å®‰è£…nodejsï¼ˆè§£æå™¨ã€è™šæ‹Ÿæœºï¼‰
+åˆ›é€ NodeJSçš„ç›®çš„æ˜¯ä¸ºäº†å®ç°é«˜æ€§èƒ½WebæœåŠ¡å™¨ï¼Œä»–é¦–å…ˆçœ‹é‡çš„æ˜¯äº‹ä»¶æœºåˆ¶å’Œå¼‚æ­¥IOæ¨¡å‹çš„ä¼˜è¶Šæ€§ï¼Œè€Œä¸æ˜¯JSã€‚ä½†æ˜¯ä»–éœ€è¦é€‰æ‹©ä¸€ç§ç¼–ç¨‹è¯­è¨€å®ç°ä»–çš„æƒ³æ³•ï¼Œè¿™ç§ç¼–ç¨‹è¯­è¨€ä¸èƒ½è‡ªå¸¦IOåŠŸèƒ½ï¼Œå¹¶ä¸”éœ€è¦èƒ½è‰¯å¥½æ”¯æŒäº‹ä»¶æœºåˆ¶ã€‚JSæ²¡æœ‰è‡ªå¸¦IOåŠŸèƒ½ï¼Œå¤©ç”Ÿå°±ç”¨äºå¤„ç†æµè§ˆå™¨ä¸­çš„DOMäº‹ä»¶ï¼Œå¹¶ä¸”æ‹¥æœ‰ä¸€å¤§ç¾¤ç¨‹åºå‘˜ï¼Œå› æ­¤å°±æˆä¸ºäº†å¤©ç„¶çš„é€‰æ‹©ã€‚
+Node.jsäº‹å®ä¸Šå°±æ˜¯å¦å¤–ä¸€ç§ä¸Šä¸‹æ–‡ï¼Œå®ƒå…è®¸åœ¨åç«¯ï¼ˆè„±ç¦»æµè§ˆå™¨ç¯å¢ƒï¼‰è¿è¡ŒJavaScriptä»£ç ã€‚è¦å®ç°åœ¨åå°è¿è¡ŒJavaScriptä»£ç ï¼Œä»£ç éœ€è¦å…ˆè¢«è§£é‡Šç„¶åæ­£ç¡®çš„æ‰§è¡Œã€‚Node.jsçš„åŸç†æ­£æ˜¯å¦‚æ­¤ï¼Œå®ƒä½¿ç”¨äº†Googleçš„V8è™šæ‹Ÿæœºï¼ˆGoogleçš„Chromeæµè§ˆå™¨ä½¿ç”¨çš„JavaScriptæ‰§è¡Œç¯å¢ƒï¼‰ï¼Œæ¥è§£é‡Šå’Œæ‰§è¡ŒJavaScriptä»£ç ã€‚
 
 node-vxxx-x64.msi
-Ìí¼Ó»·¾³±äÁ¿
+æ·»åŠ ç¯å¢ƒå˜é‡
 node -v
 
 npm -v
 
 
-2.°²×°cordova
+2.å®‰è£…cordova
 http://cordova.apache.org/docs/en/latest/guide/overview/index.html
 
 2.1
-¿ªÔ´ÒÆ¶¯¿ò¼Ü£¬Ê¹ÓÃweb¼¼Êõhmtl5£¬css3ºÍjavacript½øĞĞ¿çÆ½Ì¨¿ª·¢¡£
-CordovaÌá¹©ÁËÒ»×éÉè±¸Ïà¹ØµÄAPI£¬Í¨¹ıÕâ×éAPI£¬ÒÆ¶¯Ó¦ÓÃÄÜ¹»ÒÔJavaScript·ÃÎÊÔ­ÉúµÄÉè±¸¹¦ÄÜ£¬ÈçÉãÏñÍ·¡¢Âó¿Ë·çµÈ¡£Cordova»¹Ìá¹©ÁËÒ»×éÍ³Ò»µÄJavaScriptÀà¿â£¬ÒÔ¼°ÎªÕâĞ©Àà¿âËùÓÃµÄÉè±¸Ïà¹ØµÄÔ­ÉúºóÌ¨´úÂë¡£CLI£¨cordovaÃüÁîĞĞ½çÃæ£©ÔÊĞíÍ¬Ê±±àÒë¶à¸öÆ½Ì¨µÄ¹¤³Ì¡£
+å¼€æºç§»åŠ¨æ¡†æ¶ï¼Œä½¿ç”¨webæŠ€æœ¯hmtl5ï¼Œcss3å’Œjavacriptè¿›è¡Œè·¨å¹³å°å¼€å‘ã€‚
+Cordovaæä¾›äº†ä¸€ç»„è®¾å¤‡ç›¸å…³çš„APIï¼Œé€šè¿‡è¿™ç»„APIï¼Œç§»åŠ¨åº”ç”¨èƒ½å¤Ÿä»¥JavaScriptè®¿é—®åŸç”Ÿçš„è®¾å¤‡åŠŸèƒ½ï¼Œå¦‚æ‘„åƒå¤´ã€éº¦å…‹é£ç­‰ã€‚Cordovaè¿˜æä¾›äº†ä¸€ç»„ç»Ÿä¸€çš„JavaScriptç±»åº“ï¼Œä»¥åŠä¸ºè¿™äº›ç±»åº“æ‰€ç”¨çš„è®¾å¤‡ç›¸å…³çš„åŸç”Ÿåå°ä»£ç ã€‚CLIï¼ˆcordovaå‘½ä»¤è¡Œç•Œé¢ï¼‰å…è®¸åŒæ—¶ç¼–è¯‘å¤šä¸ªå¹³å°çš„å·¥ç¨‹ã€‚
 
 
-2.2¼Ü¹¹Í¼£¨webview¡¢web app¡¢plugin£©
-¿çÆ½Ì¨¡¢ÒÔÄ³¸öÆ½Ì¨ÎªÖĞĞÄµÄ¿ª·¢·½Ê½
-¿çÆ½Ì¨¿ÉÒÔÇĞ»»ÎªÄ³ÌØ¶¨Æ½Ì¨¿ª·¢·½Ê½£¬µ«²»ÄÜÔÙ´ÎÇĞ»»»ØÀ´£¬ÒòÎª¿çÆ½Ì¨Î¬»¤Ò»¸öÍ¨ÓÃµÄ´úÂë¼¯ºÏ¡£
+2.2æ¶æ„å›¾ï¼ˆwebviewã€web appã€pluginï¼‰
+è·¨å¹³å°ã€ä»¥æŸä¸ªå¹³å°ä¸ºä¸­å¿ƒçš„å¼€å‘æ–¹å¼
+è·¨å¹³å°å¯ä»¥åˆ‡æ¢ä¸ºæŸç‰¹å®šå¹³å°å¼€å‘æ–¹å¼ï¼Œä½†ä¸èƒ½å†æ¬¡åˆ‡æ¢å›æ¥ï¼Œå› ä¸ºè·¨å¹³å°ç»´æŠ¤ä¸€ä¸ªé€šç”¨çš„ä»£ç é›†åˆã€‚
 
 2.3
-//windowsÏÂ£¬-g tells npm to install cordova globally. ·ñÔò»á°²×°ÔÚµ±Ç°¹¤×÷Ä¿Â¼µÄnode_modules×ÓÄ¿Â¼ÏÂ¡£
+//windowsä¸‹ï¼Œ-g tells npm to install cordova globally. å¦åˆ™ä¼šå®‰è£…åœ¨å½“å‰å·¥ä½œç›®å½•çš„node_moduleså­ç›®å½•ä¸‹ã€‚
 npm install -g  cordova
-//macÏÂ
+//macä¸‹
 $ sudo npm install -g cordova
 
 //release build
@@ -40,99 +40,99 @@ ionic cordova build android --release
 
 
 cordova -v
-cordova create <¹¤³ÌÂ·¾¶> <id> <¹¤³ÌÃû> 
+cordova create <å·¥ç¨‹è·¯å¾„> <id> <å·¥ç¨‹å> 
 cordova platform add android  
 cordova platform build android  
 
 cordova plugin list
-cordova plugin add <²å¼şÍêÈ«ÏŞ¶¨Ãû>
+cordova plugin add <æ’ä»¶å®Œå…¨é™å®šå>
 
-2.4 ´´½¨cordova app
-2.4.1 °²×°cordovaÃüÁîĞĞ½çÃæCLI
+2.4 åˆ›å»ºcordova app
+2.4.1 å®‰è£…cordovaå‘½ä»¤è¡Œç•Œé¢CLI
 npm install -g cordova
 
-2.4.2 ´´½¨¹¤³Ì
+2.4.2 åˆ›å»ºå·¥ç¨‹
 	2.4.2.1 
 	create HelloCordova com.qmzs.hellocordova CordovaHello
-	<name>CordovaHello</name>£ºÏÔÊ¾ÔÚÊÖ»úhome»òÕßappstoreÉÏµÄÃû³Æ
+	<name>CordovaHello</name>ï¼šæ˜¾ç¤ºåœ¨æ‰‹æœºhomeæˆ–è€…appstoreä¸Šçš„åç§°
 	id="com.qmzs.hellocordova"
-	Ä¿¹¤×÷Â¼F:\code-test\HelloCordova
+	ç›®å·¥ä½œå½•F:\code-test\HelloCordova
 	
 	2.4.2.2 
-	cordova platform add android --save	//--saveµ½config.xml <engine name="android" spec="~6.1.2" />
+	cordova platform add android --save	//--saveåˆ°config.xml <engine name="android" spec="~6.1.2" />
 	
 	2.4.2.3 
-	cordova build android(¿ÉÔÚandroid studio±àÒë)
+	cordova build android(å¯åœ¨android studioç¼–è¯‘)
 	
 	2.4.2.3 
 	cordova emulate/run android
 	
  
- 2.5 ÃüÁî
- 2.5.1 È«¾ÖÃüÁî
- create¡¢help¡¢telemetry
+ 2.5 å‘½ä»¤
+ 2.5.1 å…¨å±€å‘½ä»¤
+ createã€helpã€telemetry
  
- 2.5.2 projectÃüÁî
- platform¡¢compile¡¢run¡¢serve¡¢clean
+ 2.5.2 projectå‘½ä»¤
+ platformã€compileã€runã€serveã€clean
  
- 2.6Ä¿Â¼½á¹¹
- config.xml£ºÈ«¾ÖÅäÖÃÎÄ¼şhttp://cordova.apache.org/docs/en/latest/config_ref/index.html
- platforms/£ºÆ½Ì¨Ïà¹Ø´úÂëºÍbuild½Å±¾
- plugins/£º²å¼ş
- hooks/£º¶¨ÖÆcordova½Å±¾
- merges/£ºÆ½Ì¨¶¨ÖÆ
+ 2.6ç›®å½•ç»“æ„
+ config.xmlï¼šå…¨å±€é…ç½®æ–‡ä»¶http://cordova.apache.org/docs/en/latest/config_ref/index.html
+ platforms/ï¼šå¹³å°ç›¸å…³ä»£ç å’Œbuildè„šæœ¬
+ plugins/ï¼šæ’ä»¶
+ hooks/ï¼šå®šåˆ¶cordovaè„šæœ¬
+ merges/ï¼šå¹³å°å®šåˆ¶
  
  
- 2.7 Æ½Ì¨¶¨ÖÆ
- ³¡¾°£ºandroidÆ½Ì¨×ÖÌå´óĞ¡14£¬ÆäËûÆ½Ì¨12£¬×ö·¨ÈçÏÂ£º
-  1. www/index.htmlÌí¼Ó <link rel="stylesheet" type="text/css" href="css/overrides.css" />
-  2. ´´½¨¿ÕÎÄ¼şwww/css/overrides.css£¬·ÀÖ¹·ÇandroidÆ½Ì¨ÎÄ¼şÈ±Ê§
-  3. ´´½¨Ä¿Â¼ºÍÎÄ¼ş/merges/android/overrides.css, overrides.cssÄÚÈİ£ºbody { font-size:14px; }
+ 2.7 å¹³å°å®šåˆ¶
+ åœºæ™¯ï¼šandroidå¹³å°å­—ä½“å¤§å°14ï¼Œå…¶ä»–å¹³å°12ï¼Œåšæ³•å¦‚ä¸‹ï¼š
+  1. www/index.htmlæ·»åŠ  <link rel="stylesheet" type="text/css" href="css/overrides.css" />
+  2. åˆ›å»ºç©ºæ–‡ä»¶www/css/overrides.cssï¼Œé˜²æ­¢éandroidå¹³å°æ–‡ä»¶ç¼ºå¤±
+  3. åˆ›å»ºç›®å½•å’Œæ–‡ä»¶/merges/android/overrides.css, overrides.csså†…å®¹ï¼šbody { font-size:14px; }
   4. rebuild
   
  2.8 plugin
- cordova plugin search camera	// ËÑË÷²å¼şÒ³Ãæ£¬±ÈÈç¸úcameraÓĞ¹ØµÄ²å¼ş
- cordova plugin add cordova-plugin-camera --save //--saveµ½config.xml <plugin name="cordova-plugin-camera" spec="~2.4.0" />
+ cordova plugin search camera	// æœç´¢æ’ä»¶é¡µé¢ï¼Œæ¯”å¦‚è·Ÿcameraæœ‰å…³çš„æ’ä»¶
+ cordova plugin add cordova-plugin-camera --save //--saveåˆ°config.xml <plugin name="cordova-plugin-camera" spec="~2.4.0" />
  
 
- 2.9 Éı¼¶ 
- npm update -g cordova	//È«²¿Éı¼¶
- cordova platform update android --save	//Ö¸¶¨Æ½Ì¨Éı¼¶
+ 2.9 å‡çº§ 
+ npm update -g cordova	//å…¨éƒ¨å‡çº§
+ cordova platform update android --save	//æŒ‡å®šå¹³å°å‡çº§
  
- 2.10 apkÇ©Ãû 
+ 2.10 apkç­¾å 
 
  1. cordova run android --release -- --keystore=../my-release-key.keystore --storePassword=password --alias=alias_name --password=password
- 2. »òÕßbuild.json
- 3. »òÕßÊ¹ÓÃGradle
+ 2. æˆ–è€…build.json
+ 3. æˆ–è€…ä½¿ç”¨Gradle
  
- 2.11 android studio´ò¿ªcordova¹¤³Ì
- ½¨Òé²»ÒªÔÚstudio±à¼­´úÂë£¬»áÓ°ÏìplatformÏÂµÄ´úÂë£¬Ö»±à¼­wwwÏÂµÄÎÄ¼ş£¬È»ºóÓÃcordova build×Ô¶¯¿½±´¸Ä±äµÄ²¿·Ö¡£
+ 2.11 android studioæ‰“å¼€cordovaå·¥ç¨‹
+ å»ºè®®ä¸è¦åœ¨studioç¼–è¾‘ä»£ç ï¼Œä¼šå½±å“platformä¸‹çš„ä»£ç ï¼Œåªç¼–è¾‘wwwä¸‹çš„æ–‡ä»¶ï¼Œç„¶åç”¨cordova buildè‡ªåŠ¨æ‹·è´æ”¹å˜çš„éƒ¨åˆ†ã€‚
  Plugin developers wishing to edit their native code in the IDE should use the --link flag when adding their plugin to the project via cordova plugin add. This will link the files so that changes to the plugin files in the platforms folder are reflected in your plugin's source folder (and vice versa).
  
- 2.12 ÉúÃüÖÜÆÚ
- µÍÄÚ´æÊ±£¬ ¡°¿ª·¢ÕßÑ¡Ïî¡±->²»±£Áô»î¶¯²âÊÔcordova app£¬ĞèÒª×óÒ»Ğ©Êı¾İ±£´æ´¦Àí¡£
+ 2.12 ç”Ÿå‘½å‘¨æœŸ
+ ä½å†…å­˜æ—¶ï¼Œ â€œå¼€å‘è€…é€‰é¡¹â€->ä¸ä¿ç•™æ´»åŠ¨æµ‹è¯•cordova appï¼Œéœ€è¦å·¦ä¸€äº›æ•°æ®ä¿å­˜å¤„ç†ã€‚
 
 In contrast, Cordova applications on the Android platform are executed within a Webview that is embedded in a single Android activity. 
-Native Android appsÒ»°ãÓĞ¶à¸öactivity£¬Ïà·´£¬ÔÚandroidÆ½Ì¨ÉÏ£¬cordova appÔËĞĞÔÚµ¥¸öactivityµÄWebviewÖĞ¡£
+Native Android appsä¸€èˆ¬æœ‰å¤šä¸ªactivityï¼Œç›¸åï¼Œåœ¨androidå¹³å°ä¸Šï¼Œcordova appè¿è¡Œåœ¨å•ä¸ªactivityçš„Webviewä¸­ã€‚
 
 
  2.13 cordova-plugin-whitelist
-	By default, navigations only to file:// URLs, are allowed. To allow others URLs, you must add <allow-navigation> tags to your config.xml¡£
+	By default, navigations only to file:// URLs, are allowed. To allow others URLs, you must add <allow-navigation> tags to your config.xmlã€‚
 	
-2.14 ²å¼ş
-	js-module	Ö¸jsÎÄ¼şÃû£¬¶øÕâ¸öÎÄ¼ş»á×Ô¶¯ÒÔ`<script`>±êÇ©µÄĞÎÊ½Ìí¼Óµ½CordovaÏîÄ¿µÄÆğÊ¼Ò³¡£Í¨¹ıÔÚ*js-module*ÖĞÁĞ³ö²å¼ş£¬¿ÉÒÔ¼õÉÙ¿ª·¢ÕßµÄ¹¤×÷¡£*clobbers*ÔªËØËµÃ÷ÁË*module.exports*×Ô¶¯Ìí¼Óµ½*window*¶ÔÏó£¬ÈÃ²å¼ş·½·¨ÄÜ¹»ÔÚ´°¿Ú¼¶±ğÊ¹ÓÃ¡£
+2.14 æ’ä»¶
+	js-module	æŒ‡jsæ–‡ä»¶åï¼Œè€Œè¿™ä¸ªæ–‡ä»¶ä¼šè‡ªåŠ¨ä»¥`<script`>æ ‡ç­¾çš„å½¢å¼æ·»åŠ åˆ°Cordovaé¡¹ç›®çš„èµ·å§‹é¡µã€‚é€šè¿‡åœ¨*js-module*ä¸­åˆ—å‡ºæ’ä»¶ï¼Œå¯ä»¥å‡å°‘å¼€å‘è€…çš„å·¥ä½œã€‚*clobbers*å…ƒç´ è¯´æ˜äº†*module.exports*è‡ªåŠ¨æ·»åŠ åˆ°*window*å¯¹è±¡ï¼Œè®©æ’ä»¶æ–¹æ³•èƒ½å¤Ÿåœ¨çª—å£çº§åˆ«ä½¿ç”¨ã€‚
 	
 	cordova.exec(successCallback, errorCallback, 'Pluginobject', 'pluginMethod', [arguments]);
-successCallbackºÍerrorCallback²ÎÊıÊÇ²å¼ş·½·¨µ÷ÓÃ³É¹¦»òÊ§°ÜÊ±Ö´ĞĞµÄº¯ÊıÃû¡£'Pluginobject'²ÎÊıÊÇÒ»¸ö×Ö·û´®ÓÃÓÚÊ¶±ğ°üÀ¨±»µ÷ÓÃ·½·¨µÄnative¶ÔÏó£¬'pluginMethod'²ÎÊıÊÇÒ»¸ö×Ö·û´®£¬ÓÃÀ´Ê¶±ğÒªÖ´ĞĞµÄ·½·¨£¬×îºóµÄ'arguments'ÊÇÒ»¸ö¿ÉÑ¡µÄ²ÎÊıÊı×é£¬ÓÃÀ´´«µİ¸øpluginMethod¡£
+successCallbackå’ŒerrorCallbackå‚æ•°æ˜¯æ’ä»¶æ–¹æ³•è°ƒç”¨æˆåŠŸæˆ–å¤±è´¥æ—¶æ‰§è¡Œçš„å‡½æ•°åã€‚'Pluginobject'å‚æ•°æ˜¯ä¸€ä¸ªå­—ç¬¦ä¸²ç”¨äºè¯†åˆ«åŒ…æ‹¬è¢«è°ƒç”¨æ–¹æ³•çš„nativeå¯¹è±¡ï¼Œ'pluginMethod'å‚æ•°æ˜¯ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œç”¨æ¥è¯†åˆ«è¦æ‰§è¡Œçš„æ–¹æ³•ï¼Œæœ€åçš„'arguments'æ˜¯ä¸€ä¸ªå¯é€‰çš„å‚æ•°æ•°ç»„ï¼Œç”¨æ¥ä¼ é€’ç»™pluginMethodã€‚
 
 ********************************************
 **
 *********************************************
 3. Javascript
 
-JavaScriptÖĞ£¬º¯ÊıºÍÆäËû±äÁ¿Ò»Ñù¶¼ÊÇ¿ÉÒÔ±»´«µİµÄ¡£
+JavaScriptä¸­ï¼Œå‡½æ•°å’Œå…¶ä»–å˜é‡ä¸€æ ·éƒ½æ˜¯å¯ä»¥è¢«ä¼ é€’çš„ã€‚
 
-4. ×ÜµÄ
+4. æ€»çš„
 AngularJS
 ionic
 html5
@@ -140,36 +140,36 @@ css3
 cordova
 nodejs
 
-//angular5.0»·¾³
+//angular5.0ç¯å¢ƒ
 npm cache clean  --force	or npm cache verify
 npm i -g cnpm 
-cnpm i -g @angular/cli  //ÕâÒ»²½ºó²ÅÄÜng serve -o
+cnpm i -g @angular/cli  //è¿™ä¸€æ­¥åæ‰èƒ½ng serve -o
 cnpm install  
 ng serve -o
 
-//Ìá½»svnÇ°ÇåÀí
+//æäº¤svnå‰æ¸…ç†
 for /f %i in (non-essential-files.txt) do del %i /F /S /Q
 rd .git /s /q
 rd e2e /s /q
 
-5. npmÉı¼¶
+5. npmå‡çº§
 npm install npm -g
 
-Node ×Ô´øÁË½»»¥Ê½½âÊÍÆ÷REPL
-ctrl + c - ÍË³öµ±Ç°ÖÕ¶Ë
-ctrl-c °´Á½´ÎNode REPL
+Node è‡ªå¸¦äº†äº¤äº’å¼è§£é‡Šå™¨REPL
+ctrl + c - é€€å‡ºå½“å‰ç»ˆç«¯
+ctrl-c æŒ‰ä¸¤æ¬¡Node REPL
 
-utf-8 ÊÇÄ¬ÈÏµÄ±àÂë·½Ê½£¬´ËÍâËüÍ¬ÑùÖ§³ÖÒÔÏÂ±àÂë£º"ascii", "utf8", "utf16le", "ucs2", "base64" ºÍ "hex"¡£
-ÔÚä¯ÀÀÆ÷JavaScript ÖĞ£¬Í¨³£window ÊÇÈ«¾Ö¶ÔÏó£¬ ¶øNode.js ÖĞµÄÈ«¾Ö¶ÔÏóÊÇ global£¬ËùÓĞÈ«¾Ö±äÁ¿£¨³ıÁË global ±¾ÉíÒÔÍâ£©¶¼ÊÇ global ¶ÔÏóµÄÊôĞÔ¡£
-ÎÒÃÇÔÚNode.js ÖĞÄÜ¹»Ö±½Ó·ÃÎÊµ½¶ÔÏóÍ¨³£¶¼ÊÇ global µÄÊôĞÔ£¬Èç console¡¢process µÈ
+utf-8 æ˜¯é»˜è®¤çš„ç¼–ç æ–¹å¼ï¼Œæ­¤å¤–å®ƒåŒæ ·æ”¯æŒä»¥ä¸‹ç¼–ç ï¼š"ascii", "utf8", "utf16le", "ucs2", "base64" å’Œ "hex"ã€‚
+åœ¨æµè§ˆå™¨JavaScript ä¸­ï¼Œé€šå¸¸window æ˜¯å…¨å±€å¯¹è±¡ï¼Œ è€ŒNode.js ä¸­çš„å…¨å±€å¯¹è±¡æ˜¯ globalï¼Œæ‰€æœ‰å…¨å±€å˜é‡ï¼ˆé™¤äº† global æœ¬èº«ä»¥å¤–ï¼‰éƒ½æ˜¯ global å¯¹è±¡çš„å±æ€§ã€‚
+æˆ‘ä»¬åœ¨Node.js ä¸­èƒ½å¤Ÿç›´æ¥è®¿é—®åˆ°å¯¹è±¡é€šå¸¸éƒ½æ˜¯ global çš„å±æ€§ï¼Œå¦‚ consoleã€process ç­‰
 
-6.AngularJS£º
-AngularJS ÊÇÒ»¸ö JavaScript ¿ò¼Ü¡£Ëü¿ÉÍ¨¹ı <script> ±êÇ©Ìí¼Óµ½ HTML Ò³Ãæ¡£AngularJSÍ¨¹ıÖ¸ÁîÀ©Õ¹ÁËHTML£¬²¢ÇÒÍ¨¹ı±í´ïÊ½°ó¶¨Êı¾İµ½ HTML¡£AngularJSÒÑ¾­±»ÓÃÓÚGoogleµÄ¶à¿î²úÆ·µ±ÖĞ¡£
+6.AngularJSï¼š
+AngularJS æ˜¯ä¸€ä¸ª JavaScript æ¡†æ¶ã€‚å®ƒå¯é€šè¿‡ <script> æ ‡ç­¾æ·»åŠ åˆ° HTML é¡µé¢ã€‚AngularJSé€šè¿‡æŒ‡ä»¤æ‰©å±•äº†HTMLï¼Œå¹¶ä¸”é€šè¿‡è¡¨è¾¾å¼ç»‘å®šæ•°æ®åˆ° HTMLã€‚AngularJSå·²ç»è¢«ç”¨äºGoogleçš„å¤šæ¬¾äº§å“å½“ä¸­ã€‚
 
-AngularJS Ó¦ÓÃ×é³ÉÈçÏÂ£º
-View(ÊÓÍ¼), ¼´ HTML¡£
-Model(Ä£ĞÍ), µ±Ç°ÊÓÍ¼ÖĞ¿ÉÓÃµÄÊı¾İ¡£
-Controller(¿ØÖÆÆ÷), ¼´ JavaScript º¯Êı£¬¿ÉÒÔÌí¼Ó»òĞŞ¸ÄÊôĞÔ¡£
+AngularJS åº”ç”¨ç»„æˆå¦‚ä¸‹ï¼š
+View(è§†å›¾), å³ HTMLã€‚
+Model(æ¨¡å‹), å½“å‰è§†å›¾ä¸­å¯ç”¨çš„æ•°æ®ã€‚
+Controller(æ§åˆ¶å™¨), å³ JavaScript å‡½æ•°ï¼Œå¯ä»¥æ·»åŠ æˆ–ä¿®æ”¹å±æ€§ã€‚
 
 7. ionic
 ionic start IonicPro tutorial --v2
@@ -178,146 +178,146 @@ ionic serve
 ionic platform add android
 ionic build android
 
-//³£ÓÃÃüÁî
-npm install -g cnpm --registry=https://registry.npm.taobao.org£¨npm¾µÏñÔ´Ö¸ÏòÌÔ±¦£© 
-cnpm install -g cordova ionic£¨°²×°cordova ionic£© 
-cnpm update -g cordova ionic£¨¸üĞÂcordova ionic£© 
-ionic -help£¨²é¿´°ïÖú£© 
-ionic -v£¨²é¿´°æ±¾£© 
+//å¸¸ç”¨å‘½ä»¤
+npm install -g cnpm --registry=https://registry.npm.taobao.orgï¼ˆnpmé•œåƒæºæŒ‡å‘æ·˜å®ï¼‰ 
+cnpm install -g cordova ionicï¼ˆå®‰è£…cordova ionicï¼‰ 
+cnpm update -g cordova ionicï¼ˆæ›´æ–°cordova ionicï¼‰ 
+ionic -helpï¼ˆæŸ¥çœ‹å¸®åŠ©ï¼‰ 
+ionic -vï¼ˆæŸ¥çœ‹ç‰ˆæœ¬ï¼‰ 
 
-ionic start myApp blank£¨¿ÕÏîÄ¿£© 
-ionic start myApp tabs£¨´øµ¼º½Ìõ£© 
-ionic start myApp sidemenu£¨´ø²à»¬²Ëµ¥£© 
+ionic start myApp blankï¼ˆç©ºé¡¹ç›®ï¼‰ 
+ionic start myApp tabsï¼ˆå¸¦å¯¼èˆªæ¡ï¼‰ 
+ionic start myApp sidemenuï¼ˆå¸¦ä¾§æ»‘èœå•ï¼‰ 
 
-ionic platform add android£¨Ìí¼ÓandroidÆ½Ì¨£© 
-ionic platform remove android£¨ÒÆ³ıandroidÆ½Ì¨£© 
-ionic build android£¨±àÒëÏîÄ¿apk£© 
-ionic emulate android£¨ÔËĞĞÏîÄ¿apk ÊÖ»úÁ¬½ÓÔÚÊÖ»úÔËĞĞ Ä£ÄâÆ÷Á¬½ÓÔÚÄ£ÄâÆ÷ÔËĞĞ£© 
-ionic run android £¨Ïàµ±ÓÚbuild + emulate£© 
-ionic serve£¨¿ªÆô·şÎñµ÷ÊÔ£© 
+ionic platform add androidï¼ˆæ·»åŠ androidå¹³å°ï¼‰ 
+ionic platform remove androidï¼ˆç§»é™¤androidå¹³å°ï¼‰ 
+ionic build androidï¼ˆç¼–è¯‘é¡¹ç›®apkï¼‰ 
+ionic emulate androidï¼ˆè¿è¡Œé¡¹ç›®apk æ‰‹æœºè¿æ¥åœ¨æ‰‹æœºè¿è¡Œ æ¨¡æ‹Ÿå™¨è¿æ¥åœ¨æ¨¡æ‹Ÿå™¨è¿è¡Œï¼‰ 
+ionic run android ï¼ˆç›¸å½“äºbuild + emulateï¼‰ 
+ionic serveï¼ˆå¼€å¯æœåŠ¡è°ƒè¯•ï¼‰ 
 
 
 **************************
-µ±ÌáÊ¾¹¤³Ì²»ÊÇionic¹¤³ÌÊ±£ºnpm i
+å½“æç¤ºå·¥ç¨‹ä¸æ˜¯ionicå·¥ç¨‹æ—¶ï¼šnpm i
 
-ionic g page YourPageName //´´½¨ĞÂÒ³Ãæ
-ionic g directive YourPageName //´´½¨Ö¸Áî
-ionic g component YourComponentName //´´½¨×é¼ş
-ionic g provider YourProviderName //´´½¨·şÎñ
-ionic g pipe YourPipeName //´´½¨¹ıÂËÆ÷
+ionic g page YourPageName //åˆ›å»ºæ–°é¡µé¢
+ionic g directive YourPageName //åˆ›å»ºæŒ‡ä»¤
+ionic g component YourComponentName //åˆ›å»ºç»„ä»¶
+ionic g provider YourProviderName //åˆ›å»ºæœåŠ¡
+ionic g pipe YourPipeName //åˆ›å»ºè¿‡æ»¤å™¨
 **************************
 
-8. °²×°typescript
+8. å®‰è£…typescript
 npm install -g typescript
 
 
 9. CLASSPATH
-CLASSPATHµÄ×÷ÓÃ: classpathÊÇÖ¸¶¨ÄãÔÚ³ÌĞòÖĞËùÊ¹ÓÃµÄÀà£¨.class£©ÎÄ¼şËùÔÚµÄÎ»ÖÃ£¬¾ÍÈçÔÚÒıÈëÒ»¸öÀàÊ±£ºimport javax.swing.JTableÕâ¾ä»°ÊÇ¸æËß±àÒëÆ÷ÒªÒıÈëjavax.swingÕâ¸ö°üÏÂµÄJTableÀà£¬¶øclasspath¾ÍÊÇ¸æËß±àÒëÆ÷¸Ãµ½ÄÄÀïÈ¥ÕÒµ½Õâ¸öÀà
-£¨Ç°ÌáÊÇÄãÔÚclasspathÖĞÉèÖÃÁËÕâ¸öÀàµÄÂ·¾¶£©£»Èç¹ûÄãÏëÒª±àÒëÔÚµ±Ç°Ä¿Â¼ÏÂÕÒ£¬¾Í¼ÓÉÏ¡°.¡±,Èç£º.;C:\Program Files\Java\jdk\,ÕâÑù±àÒëÆ÷¾Í»áµ½µ±Ç°Ä¿Â¼ºÍC:\Program Files\Java\jdk\È¥ÕÒjavax.swing.JTableÕâ¸öÀà£»»¹ÌáÏÂ£º´ó¶àÊıÈË¶¼ÊÇÓÃEclipseĞ´³ÌĞò£¬²»ÉèclasspathÒ²Ã»¹ØÏµ£¬ÒòÎªEclipseÓĞÏà¹ØµÄÅäÖÃ£»
+CLASSPATHçš„ä½œç”¨: classpathæ˜¯æŒ‡å®šä½ åœ¨ç¨‹åºä¸­æ‰€ä½¿ç”¨çš„ç±»ï¼ˆ.classï¼‰æ–‡ä»¶æ‰€åœ¨çš„ä½ç½®ï¼Œå°±å¦‚åœ¨å¼•å…¥ä¸€ä¸ªç±»æ—¶ï¼šimport javax.swing.JTableè¿™å¥è¯æ˜¯å‘Šè¯‰ç¼–è¯‘å™¨è¦å¼•å…¥javax.swingè¿™ä¸ªåŒ…ä¸‹çš„JTableç±»ï¼Œè€Œclasspathå°±æ˜¯å‘Šè¯‰ç¼–è¯‘å™¨è¯¥åˆ°å“ªé‡Œå»æ‰¾åˆ°è¿™ä¸ªç±»
+ï¼ˆå‰ææ˜¯ä½ åœ¨classpathä¸­è®¾ç½®äº†è¿™ä¸ªç±»çš„è·¯å¾„ï¼‰ï¼›å¦‚æœä½ æƒ³è¦ç¼–è¯‘åœ¨å½“å‰ç›®å½•ä¸‹æ‰¾ï¼Œå°±åŠ ä¸Šâ€œ.â€,å¦‚ï¼š.;C:\Program Files\Java\jdk\,è¿™æ ·ç¼–è¯‘å™¨å°±ä¼šåˆ°å½“å‰ç›®å½•å’ŒC:\Program Files\Java\jdk\å»æ‰¾javax.swing.JTableè¿™ä¸ªç±»ï¼›è¿˜æä¸‹ï¼šå¤§å¤šæ•°äººéƒ½æ˜¯ç”¨Eclipseå†™ç¨‹åºï¼Œä¸è®¾classpathä¹Ÿæ²¡å…³ç³»ï¼Œå› ä¸ºEclipseæœ‰ç›¸å…³çš„é…ç½®ï¼›
 
-pathÓëCLASSPATH µÄÇø±ğ£ºpathÊÇÓÃÀ´ËÑË÷ËùÖ´ĞĞµÄ¿ÉÖ´ĞĞÎÄ¼şÂ·¾¶µÄ£¬Èç¹ûÖ´ĞĞµÄ¿ÉÖ´ĞĞÎÄ¼ş²»ÔÚµ±Ç°Ä¿Â¼ÏÂ£¬ÄÇ¾Í»áÒÀ´ÎËÑË÷pathÖĞÉèÖÃµÄÂ·¾¶¡£
-¶øCLASSPATHÊÇÓÃÀ´¸æËß±à¼­Æ÷ÔÚÄÇÀïÑ°ÕÒJava±àÒë¹ı³ÌÖĞËùĞèµÄ°üºÍÀàËùÒÔÆäÂ·¾¶ÖĞÅäÖÃµÄÊÇlibÄ¿Â¼ÏÂµÄtools.jar;
+pathä¸CLASSPATH çš„åŒºåˆ«ï¼špathæ˜¯ç”¨æ¥æœç´¢æ‰€æ‰§è¡Œçš„å¯æ‰§è¡Œæ–‡ä»¶è·¯å¾„çš„ï¼Œå¦‚æœæ‰§è¡Œçš„å¯æ‰§è¡Œæ–‡ä»¶ä¸åœ¨å½“å‰ç›®å½•ä¸‹ï¼Œé‚£å°±ä¼šä¾æ¬¡æœç´¢pathä¸­è®¾ç½®çš„è·¯å¾„ã€‚
+è€ŒCLASSPATHæ˜¯ç”¨æ¥å‘Šè¯‰ç¼–è¾‘å™¨åœ¨é‚£é‡Œå¯»æ‰¾Javaç¼–è¯‘è¿‡ç¨‹ä¸­æ‰€éœ€çš„åŒ…å’Œç±»æ‰€ä»¥å…¶è·¯å¾„ä¸­é…ç½®çš„æ˜¯libç›®å½•ä¸‹çš„tools.jar;
 
 Set the JAVA_HOME environment variable to the location of your JDK installation
 Set the ANDROID_HOME environment variable to the location of your Android SDK installation
 It is also recommended that you add the Android SDK's tools and platform-tools directories to your PATH
 
-10. ADT²å¼ş
-ADT²å¼ş£¬Õâ¸ö²å¼şÄÜÈÃEclipseºÍAndroid SDK¹ØÁªÆğÀ´.
+10. ADTæ’ä»¶
+ADTæ’ä»¶ï¼Œè¿™ä¸ªæ’ä»¶èƒ½è®©Eclipseå’ŒAndroid SDKå…³è”èµ·æ¥.
 
 ********************************************************
 **
 ********************************************************
-cordova run --list ²é¿´AVD
-cordova platform ls	²é¿´cordovaºÍÆ½Ì¨°æ±¾ĞÅÏ¢
+cordova run --list æŸ¥çœ‹AVD
+cordova platform ls	æŸ¥çœ‹cordovaå’Œå¹³å°ç‰ˆæœ¬ä¿¡æ¯
 
 
-ctrl+shit+i chrome ÒÆ¶¯app¿ª·¢
+ctrl+shit+i chrome ç§»åŠ¨appå¼€å‘
 
 
-11. ionic Ìí¼Ó´øÄ£¿éµÄÒ³Ãæ
-×¢²á£ºlicense serve->http://idea.iteblog.com/key.php
-²»Òª±àÒë¹¤³Ì£¬·ñÔòwwwµ×ÏÂ»áÓĞ¸Ä±ä
+11. ionic æ·»åŠ å¸¦æ¨¡å—çš„é¡µé¢
+æ³¨å†Œï¼šlicense serve->http://idea.iteblog.com/key.php
+ä¸è¦ç¼–è¯‘å·¥ç¨‹ï¼Œå¦åˆ™wwwåº•ä¸‹ä¼šæœ‰æ”¹å˜
 ionic g page mypage
-pages/my-page/my-page.module.tsĞŞ¸Ä£ºIonicModule.forChild(MyPage)->IonicPageModule.forChild(MyPage),
-src/app/app.module.tsĞŞ¸Ä£ºimportsÌí¼ÓMyPageModule
+pages/my-page/my-page.module.tsä¿®æ”¹ï¼šIonicModule.forChild(MyPage)->IonicPageModule.forChild(MyPage),
+src/app/app.module.tsä¿®æ”¹ï¼šimportsæ·»åŠ MyPageModule
 
 12. intelij idea 
-´úÂëÊÕËõºÍÕ¹¿ª ctrl + ¼õºÅ£¬ ÕÛµşËùÓĞµÄ¿ì½İ¼üÉèÖÃ³É£ºctrl+shift+¼õºÅ¡£
+ä»£ç æ”¶ç¼©å’Œå±•å¼€ ctrl + å‡å·ï¼Œ æŠ˜å æ‰€æœ‰çš„å¿«æ·é”®è®¾ç½®æˆï¼šctrl+shift+å‡å·ã€‚
 
-50.  windows×Ö·û¼¯
-tchar.h: _T _TEXT _UNICODE	ÔËĞĞÆÚ
+50.  windowså­—ç¬¦é›†
+tchar.h: _T _TEXT _UNICODE	è¿è¡ŒæœŸ
 winnt.h: TEXT UNICODE
 ansi->dbcs->mbcs->unicode
 strcpy->wcscpy->_tcscpy
 LPCSTR->LPCWSTR->LPCTSTR
 
-CString ºÍ LPCTSTR »ù±¾¿ÉÒÔÍ¨ÓÃ	//operator LPCTSTR() {......} ºÍCString£¨LPCTSTR£©
-CString ×ª»»µ½ LPTSTR (char*), Ô¤¶¨µÄ×ö·¨ÊÇµ÷ÓÃCStringµÄGetBufferº¯Êı£¬Ê¹ÓÃÍê±ÏÖ®ºóÒ»°ã¶¼ÒªÔÙµ÷ÓÃReleaseBufferº¯ÊıÀ´È·ÈÏĞŞ¸Ä (Ä³Ğ©Çé¿öÏÂÒ²ÓĞ²»µ÷ÓÃReleaseBufferµÄ£¬Í¬ÑùÄãĞèÒª·Ç³£Ã÷È·ÎªÊ²Ã´ÕâÃ´×öÊ±²ÅÄÜÕâÑù´¦Àí£¬Ò»°ãÓ¦ÓÃ»·¾³¿ÉÒÔ²»¿¼ÂÇÕâÖÖÇé¿ö)¡£
-¡¡¡¡Í¬Ê±ĞèÒª×¢ÒâµÄÊÇ£¬ ÔÚGetBuffer ºÍ ReleaseBufferÖ®¼ä£¬CString·ÖÅäÁËÄÚ´æ½»ÓÉÄãÀ´´¦Àí£¬Òò´Ë²»ÄÜÔÙµ÷ÓÃÆäËûµÄCStringº¯Êı¡£
-¡¡¡¡CString ×ªLPCTSTR:
-¡¡¡¡CString cStr;
-¡¡¡¡const char *lpctStr=(LPCTSTR)cStr;
-¡¡¡¡LPCTSTR×ªCString:
-¡¡¡¡LPCTSTR lpctStr;
-¡¡¡¡CString cStr=lpctStr;
+CString å’Œ LPCTSTR åŸºæœ¬å¯ä»¥é€šç”¨	//operator LPCTSTR() {......} å’ŒCStringï¼ˆLPCTSTRï¼‰
+CString è½¬æ¢åˆ° LPTSTR (char*), é¢„å®šçš„åšæ³•æ˜¯è°ƒç”¨CStringçš„GetBufferå‡½æ•°ï¼Œä½¿ç”¨å®Œæ¯•ä¹‹åä¸€èˆ¬éƒ½è¦å†è°ƒç”¨ReleaseBufferå‡½æ•°æ¥ç¡®è®¤ä¿®æ”¹ (æŸäº›æƒ…å†µä¸‹ä¹Ÿæœ‰ä¸è°ƒç”¨ReleaseBufferçš„ï¼ŒåŒæ ·ä½ éœ€è¦éå¸¸æ˜ç¡®ä¸ºä»€ä¹ˆè¿™ä¹ˆåšæ—¶æ‰èƒ½è¿™æ ·å¤„ç†ï¼Œä¸€èˆ¬åº”ç”¨ç¯å¢ƒå¯ä»¥ä¸è€ƒè™‘è¿™ç§æƒ…å†µ)ã€‚
+ã€€ã€€åŒæ—¶éœ€è¦æ³¨æ„çš„æ˜¯ï¼Œ åœ¨GetBuffer å’Œ ReleaseBufferä¹‹é—´ï¼ŒCStringåˆ†é…äº†å†…å­˜äº¤ç”±ä½ æ¥å¤„ç†ï¼Œå› æ­¤ä¸èƒ½å†è°ƒç”¨å…¶ä»–çš„CStringå‡½æ•°ã€‚
+ã€€ã€€CString è½¬LPCTSTR:
+ã€€ã€€CString cStr;
+ã€€ã€€const char *lpctStr=(LPCTSTR)cStr;
+ã€€ã€€LPCTSTRè½¬CString:
+ã€€ã€€LPCTSTR lpctStr;
+ã€€ã€€CString cStr=lpctStr;
 
-GetBufferÍ¨³£ÊÇÎÒÃÇÏ£ÍûÓÃµ½cstringÀàµÄ×Ö·û´®µÄÖ¸Õë£¬Í¨³£´«0£¬Èç¹û¶Ô·µ»ØµÄÖ¸ÕëÖ¸ÏòµÄÄÚÈİÃ»ÓĞĞŞ¸ÄµÄ»°£¬
-¾Í²»ĞèÒªµ÷ÓÃReleaseBufferÁË£¬Èç¹ûĞŞ¸ÄÁËÕâ¸öÖ¸ÕëÖ¸ÏòµÄÄÚÈİ£¬¾ÍĞèÒªµ÷ÓÃReleaseBufferÁË£¬Í¨³£´«-1£¬¼´ÖØĞÂÉèÖÃbuffer³¤¶ÈÎª×Ö·û´®µÄlengh
+GetBufferé€šå¸¸æ˜¯æˆ‘ä»¬å¸Œæœ›ç”¨åˆ°cstringç±»çš„å­—ç¬¦ä¸²çš„æŒ‡é’ˆï¼Œé€šå¸¸ä¼ 0ï¼Œå¦‚æœå¯¹è¿”å›çš„æŒ‡é’ˆæŒ‡å‘çš„å†…å®¹æ²¡æœ‰ä¿®æ”¹çš„è¯ï¼Œ
+å°±ä¸éœ€è¦è°ƒç”¨ReleaseBufferäº†ï¼Œå¦‚æœä¿®æ”¹äº†è¿™ä¸ªæŒ‡é’ˆæŒ‡å‘çš„å†…å®¹ï¼Œå°±éœ€è¦è°ƒç”¨ReleaseBufferäº†ï¼Œé€šå¸¸ä¼ -1ï¼Œå³é‡æ–°è®¾ç½®bufferé•¿åº¦ä¸ºå­—ç¬¦ä¸²çš„lengh
 
 	CString abc = _T("abcdefg");
 	LPTSTR str = abc.GetBuffer(0);
-	str[3] = '\0';					//ĞŞ¸Äºó±ØĞëµ÷ÓÃReleaseBuffer£¬·ñÔò³¤¶ÈºÍÏÔÊ¾µÄÄÚÈİ´óĞ¡²»Ò»ÖÂ
-	//abc.ReleaseBuffer();			//×¢ÊÍµÄ»°£¬length1=7£¬ length2=16£¬ abcÖ»ÏÔÊ¾¡°abc¡±£»´ò¿ªµÄ»°£¬length1=3£¬ length2=12£¬ abcÖ»ÏÔÊ¾¡°abc123456789¡±
+	str[3] = '\0';					//ä¿®æ”¹åå¿…é¡»è°ƒç”¨ReleaseBufferï¼Œå¦åˆ™é•¿åº¦å’Œæ˜¾ç¤ºçš„å†…å®¹å¤§å°ä¸ä¸€è‡´
+	//abc.ReleaseBuffer();			//æ³¨é‡Šçš„è¯ï¼Œlength1=7ï¼Œ length2=16ï¼Œ abcåªæ˜¾ç¤ºâ€œabcâ€ï¼›æ‰“å¼€çš„è¯ï¼Œlength1=3ï¼Œ length2=12ï¼Œ abcåªæ˜¾ç¤ºâ€œabc123456789â€
 	int length1 = abc.GetLength();
 	abc += _T("123456789");
 	int length2 = abc.GetLength();
 	
 	CString abc1;
 	LPTSTR str = abc1.GetBuffer(100);
-	int length0 = abc1.GetLength();	//length0 == 0,Ö»ÓĞĞŞ¸ÄstrµÄÄÚÈİ²¢ReleaseBufferºó£¬length0²Å´óÓÚ0
+	int length0 = abc1.GetLength();	//length0 == 0,åªæœ‰ä¿®æ”¹strçš„å†…å®¹å¹¶ReleaseBufferåï¼Œlength0æ‰å¤§äº0
 	
-	//UTF-8ÓÃ1µ½6¸ö×Ö½Ú±àÂëUnicode×Ö·û,UTF-16±ÈÆğUTF-8£¬ºÃ´¦ÔÚÓÚ´ó²¿·Ö×Ö·û¶¼ÒÔ¹Ì¶¨³¤¶ÈµÄ×Ö½Ú (2×Ö½Ú) ´¢´æ£¬µ«UTF-16È´ÎŞ·¨¼æÈİÓÚASCII±àÂë¡£
-	UnicodeÊÇÒ»¸ö×Ö·û¼¯£¬UTF-8,UTF-16,UTF-32¶¼ÊÇÕâ¸ö×Ö·û¼¯ÉÏµÄ±àÂë·½Ê½¡£¶øASCII£¬GBKµÈ¶¼ÊÇÆäËü×Ö·û¼¯£¬
-	ËûÃÇÓÉÓÚÃ»ÓĞÏñUnicodeÕâÑù½«±àÂëºÍ³éÏó±íÊ¾½âñî£¬ËùÒÔÄ¬ÈÏ¶¼Ö»ÓĞÒ»¸ö¶ÔÓ¦µÄ±àÂë·½Ê½¡£
+	//UTF-8ç”¨1åˆ°6ä¸ªå­—èŠ‚ç¼–ç Unicodeå­—ç¬¦,UTF-16æ¯”èµ·UTF-8ï¼Œå¥½å¤„åœ¨äºå¤§éƒ¨åˆ†å­—ç¬¦éƒ½ä»¥å›ºå®šé•¿åº¦çš„å­—èŠ‚ (2å­—èŠ‚) å‚¨å­˜ï¼Œä½†UTF-16å´æ— æ³•å…¼å®¹äºASCIIç¼–ç ã€‚
+	Unicodeæ˜¯ä¸€ä¸ªå­—ç¬¦é›†ï¼ŒUTF-8,UTF-16,UTF-32éƒ½æ˜¯è¿™ä¸ªå­—ç¬¦é›†ä¸Šçš„ç¼–ç æ–¹å¼ã€‚è€ŒASCIIï¼ŒGBKç­‰éƒ½æ˜¯å…¶å®ƒå­—ç¬¦é›†ï¼Œ
+	ä»–ä»¬ç”±äºæ²¡æœ‰åƒUnicodeè¿™æ ·å°†ç¼–ç å’ŒæŠ½è±¡è¡¨ç¤ºè§£è€¦ï¼Œæ‰€ä»¥é»˜è®¤éƒ½åªæœ‰ä¸€ä¸ªå¯¹åº”çš„ç¼–ç æ–¹å¼ã€‚
 	
 	TCHAR buf[100] = {0};
 	swprintf(buf, L"%s", "aa");	//ansi->unicode
 	
-	¶Ôunicode×Ö·û´®²Ù×÷µÄº¯ÊıÈç£ºlstrcmp\lstrlen,ÒÀÀµUNICODEºê
+	å¯¹unicodeå­—ç¬¦ä¸²æ“ä½œçš„å‡½æ•°å¦‚ï¼šlstrcmp\lstrlen,ä¾èµ–UNICODEå®
 	
-	BSTRºÍOLECHARµÄ½»»»£¿´ğ°¸ÊÇCOMÌá¹©ÁËÁ½¸öBSTR·ÖÅäÓÃµÄAPI£ºSysAllocString / SysReallocString¡£º¯Êı·µ»ØµÄÖ¸ÕëÖ¸ÏòBSTRµÄµÚÒ»¸ö×Ö·û£¬¶ø²»ÊÇBSTRÔÚÄÚ´æµÄµÚÒ»¸ö×Ö½Ú¡£
-	²»Òª°ÑBSTRÖ±½Ó³õÊ¼»¯³É³£Á¿×Ö·ûÖ¸Õë£¬ÀıÈç£¬BSTR bs = L¡±¡±¡£
+	BSTRå’ŒOLECHARçš„äº¤æ¢ï¼Ÿç­”æ¡ˆæ˜¯COMæä¾›äº†ä¸¤ä¸ªBSTRåˆ†é…ç”¨çš„APIï¼šSysAllocString / SysReallocStringã€‚å‡½æ•°è¿”å›çš„æŒ‡é’ˆæŒ‡å‘BSTRçš„ç¬¬ä¸€ä¸ªå­—ç¬¦ï¼Œè€Œä¸æ˜¯BSTRåœ¨å†…å­˜çš„ç¬¬ä¸€ä¸ªå­—èŠ‚ã€‚
+	ä¸è¦æŠŠBSTRç›´æ¥åˆå§‹åŒ–æˆå¸¸é‡å­—ç¬¦æŒ‡é’ˆï¼Œä¾‹å¦‚ï¼ŒBSTR bs = Lâ€â€ã€‚
 
-12. cssÑ¡ÔñÆ÷
-ÔªËØ¡¢ÀàĞÍ	a{color:red;}							<a></a>
-·Ö×é		h2, p {color:gray;}						¶ººÅ¸ô¿ª
-ÉùÃ÷		h1 {color: white; background: black;}	·ÖºÅ¸ô¿ª
+12. cssé€‰æ‹©å™¨
+å…ƒç´ ã€ç±»å‹	a{color:red;}							<a></a>
+åˆ†ç»„		h2, p {color:gray;}						é€—å·éš”å¼€
+å£°æ˜		h1 {color: white; background: black;}	åˆ†å·éš”å¼€
 id			#red{color:red;} 						<a id="red"></a>
-Àà  		.red{color:red;}						<a class="red"></a>
-ÊôĞÔ		input[type="text"]{width:150px;}		<input type="text"></input> ¿É¼Ó~¡¢$¡¢*¡¢^
+ç±»  		.red{color:red;}						<a class="red"></a>
+å±æ€§		input[type="text"]{width:150px;}		<input type="text"></input> å¯åŠ ~ã€$ã€*ã€^
 
-ºó´úÔªËØ	h1 em {color:red;}						»á°Ñ×÷Îª h1 ÔªËØºó´úµÄ em ÔªËØµÄÎÄ±¾±äÎªºìÉ«£¬¿ÉÒÔÉîÇ¶Ì×£¬Ò²½Ğ°üº¬Ñ¡ÔñÆ÷
-×ÓÔªËØ		h1 > strong {color:red;}				Ñ¡ÔñÖ»×÷Îª h1 ÔªËØ×ÓÔªËØµÄ strong ÔªËØ£¬¿ÉÈÏÎªÊÇºó´úÑ¡ÔñÆ÷µÄ×Ó¼¯
-ÏàÁÚĞÖµÜ	h1 + p {margin-top:50px;}				Ñ¡Ôñ½ô½ÓÔÚ h1 ÔªËØºó³öÏÖµÄ¶ÎÂä£¬h1 ºÍ p ÔªËØÓµÓĞ¹²Í¬µÄ¸¸ÔªËØ
-ÅÉÉú 												°üº¬×ÓÔªËØ¡¢ºó´úÔªËØ¡¢ÏàÁÚĞÖµÜ
+åä»£å…ƒç´ 	h1 em {color:red;}						ä¼šæŠŠä½œä¸º h1 å…ƒç´ åä»£çš„ em å…ƒç´ çš„æ–‡æœ¬å˜ä¸ºçº¢è‰²ï¼Œå¯ä»¥æ·±åµŒå¥—ï¼Œä¹Ÿå«åŒ…å«é€‰æ‹©å™¨
+å­å…ƒç´ 		h1 > strong {color:red;}				é€‰æ‹©åªä½œä¸º h1 å…ƒç´ å­å…ƒç´ çš„ strong å…ƒç´ ï¼Œå¯è®¤ä¸ºæ˜¯åä»£é€‰æ‹©å™¨çš„å­é›†
+ç›¸é‚»å…„å¼Ÿ	h1 + p {margin-top:50px;}				é€‰æ‹©ç´§æ¥åœ¨ h1 å…ƒç´ åå‡ºç°çš„æ®µè½ï¼Œh1 å’Œ p å…ƒç´ æ‹¥æœ‰å…±åŒçš„çˆ¶å…ƒç´ 
+æ´¾ç”Ÿ 												åŒ…å«å­å…ƒç´ ã€åä»£å…ƒç´ ã€ç›¸é‚»å…„å¼Ÿ
 
-Î±Àà		a:visited {color: #00FF00}				ÒÑ·ÃÎÊµÄÁ´½Ó
-Î±ÔªËØ		p:first-line{color:#ff0000;}			¶Ô p ÔªËØµÄµÚÒ»ĞĞÎÄ±¾½øĞĞ¸ñÊ½»¯
+ä¼ªç±»		a:visited {color: #00FF00}				å·²è®¿é—®çš„é“¾æ¥
+ä¼ªå…ƒç´ 		p:first-line{color:#ff0000;}			å¯¹ p å…ƒç´ çš„ç¬¬ä¸€è¡Œæ–‡æœ¬è¿›è¡Œæ ¼å¼åŒ–
 
 
-13. angular4°²×°
+13. angular4å®‰è£…
 
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm install -g @angular/cli
 npm install
 ng serve -o
-ng build --prod --aot	//angular ·¢²¼°æ±¾¼Ó--prod --aot
+ng build --prod --aot	//angular å‘å¸ƒç‰ˆæœ¬åŠ --prod --aot
 //ionic build --prod --aot
 
 ng g component ArrowKey
 
-14. ×î¼Ñµ¥ÀıÄ£Ê½ Ïß³Ì°²È« ÍË³ö³ÌĞò×Ô¶¯Îö¹¹
+14. æœ€ä½³å•ä¾‹æ¨¡å¼ çº¿ç¨‹å®‰å…¨ é€€å‡ºç¨‹åºè‡ªåŠ¨ææ„
 template<class 
 class CSingletonBase
 {
@@ -332,7 +332,7 @@ protected:
 	~CSingletonBase(void){}
 
 private:
-	static T s_pInstance;	//Ö÷Ïß³ÌÖ®Ç°ÒÑ¾­´´½¨²¢³õÊ¼»¯ºÃ
+	static T s_pInstance;	//ä¸»çº¿ç¨‹ä¹‹å‰å·²ç»åˆ›å»ºå¹¶åˆå§‹åŒ–å¥½
 
 	CSingletonBase(const CSingletonBase&) {};
 	CSingletonBase& operator=(const CSingletonBase&) {};
@@ -341,10 +341,10 @@ private:
 template<class T>
 T CSingletonBase<T>::s_pInstance;
 
-//Ê¹ÓÃ
+//ä½¿ç”¨
 class CFloatKeyManager : public CSingletonBase<CFloatKeyManager>
 {
-	friend class CSingletonBase<CFloatKeyManager>;	//·ÃÎÊprotected  CFloatKeyManager();
+	friend class CSingletonBase<CFloatKeyManager>;	//è®¿é—®protected  CFloatKeyManager();
 protected:
 	CFloatKeyManager();
 	~CFloatKeyManager(); 
@@ -352,38 +352,38 @@ protected:
 
 *************************************************************************************************
 *************************************************************************************************
-15. git¹ÜÀí´úÂë
-git pullÖ®Ç° git stash ÕâÑù±¾µØµÄËùÓĞĞŞ¸Ä¾Í¶¼±»ÔİÊ±´æ´¢ÆğÀ´ ¡£ÊÇÓÃgit stash list¿ÉÒÔ¿´µ½±£´æµÄĞÅÏ¢£º
+15. gitç®¡ç†ä»£ç 
+git pullä¹‹å‰ git stash è¿™æ ·æœ¬åœ°çš„æ‰€æœ‰ä¿®æ”¹å°±éƒ½è¢«æš‚æ—¶å­˜å‚¨èµ·æ¥ ã€‚æ˜¯ç”¨git stash listå¯ä»¥çœ‹åˆ°ä¿å­˜çš„ä¿¡æ¯ï¼š
 
 git pull
 
 git stash pop stash@{0}
 
 Auto-merging c/environ.c
-CONFLICT (content): Merge conflict in c/environ.c	//¿ÉÄÜÓĞ³åÍ»
+CONFLICT (content): Merge conflict in c/environ.c	//å¯èƒ½æœ‰å†²çª
 
 
 ************************************
-********ĞŞ¸Ägit commit ×îºóÒ»´ÎÌá½»µÄ×¢ÊÍĞÅÏ¢ ÒÔ¼°ÈçºÎÍË³ögit bash vim±à¼­Æ÷
+********ä¿®æ”¹git commit æœ€åä¸€æ¬¡æäº¤çš„æ³¨é‡Šä¿¡æ¯ ä»¥åŠå¦‚ä½•é€€å‡ºgit bash vimç¼–è¾‘å™¨
 
-git commit -m ¡°×¢ÊÍ¡±Ìá½»µÄÊ±ºò£¬×¢ÊÍĞ´´íÁË
+git commit -m â€œæ³¨é‡Šâ€æäº¤çš„æ—¶å€™ï¼Œæ³¨é‡Šå†™é”™äº†
 
-Ê×ÏÈÊ¹ÓÃ git commit --amend ÃüÁî£¬£¨ĞŞ¸Ä×î½üÒ»´ÎÌá½»µÄ×¢ÊÍĞÅÏ¢£©£¬»á½øÈëµ½vim ±à¼­Æ÷
+é¦–å…ˆä½¿ç”¨ git commit --amend å‘½ä»¤ï¼Œï¼ˆä¿®æ”¹æœ€è¿‘ä¸€æ¬¡æäº¤çš„æ³¨é‡Šä¿¡æ¯ï¼‰ï¼Œä¼šè¿›å…¥åˆ°vim ç¼–è¾‘å™¨
 
-È»ºó Äã»á·¢ÏÖ±à¼­Æ÷ÀïÄãÔõÃ´ÊäÈë¶¼Ã»·´Ó¦£¬ÕâÊÇÒòÎªvim´¦ÔÚ²»¿É±à¼­×´Ì¬£¬°´ÏÂ×ÖÄ¸¼ü c£¬´ËÊ±½øÈë±à¼­×´Ì¬£¬¿ÉÒÔ¿ªÊ¼ĞŞ¸Ä×¢ÊÍĞÅÏ¢ÁË
+ç„¶å ä½ ä¼šå‘ç°ç¼–è¾‘å™¨é‡Œä½ æ€ä¹ˆè¾“å…¥éƒ½æ²¡ååº”ï¼Œè¿™æ˜¯å› ä¸ºvimå¤„åœ¨ä¸å¯ç¼–è¾‘çŠ¶æ€ï¼ŒæŒ‰ä¸‹å­—æ¯é”® cï¼Œæ­¤æ—¶è¿›å…¥ç¼–è¾‘çŠ¶æ€ï¼Œå¯ä»¥å¼€å§‹ä¿®æ”¹æ³¨é‡Šä¿¡æ¯äº†
 
-ÔÚÈ»ºó Äã»á·¢ÏÖÄãÔõÃ´¶¼ÍË³ö²»ÁË£¬»Øµ½shellÁË£¬È»ºó²Ù×÷ÈçÏÂ£º ESC  --¡· ÍË³ö±à¼­×´Ì¬£»½Ó×Å Á¬Ğø°´Á½´Î´óĞ´×ÖÄ¸¼ü Z£¬½Ó×ÅÄã»á¾ªÏ²µÄ·¢ÏÖ£¬ÖÕÓÚ±£´æºÃÍË³öÀ´ÁË£¡
+åœ¨ç„¶å ä½ ä¼šå‘ç°ä½ æ€ä¹ˆéƒ½é€€å‡ºä¸äº†ï¼Œå›åˆ°shelläº†ï¼Œç„¶åæ“ä½œå¦‚ä¸‹ï¼š ESC  --ã€‹ é€€å‡ºç¼–è¾‘çŠ¶æ€ï¼›æ¥ç€ è¿ç»­æŒ‰ä¸¤æ¬¡å¤§å†™å­—æ¯é”® Zï¼Œæ¥ç€ä½ ä¼šæƒŠå–œçš„å‘ç°ï¼Œç»ˆäºä¿å­˜å¥½é€€å‡ºæ¥äº†ï¼
 
-×Ü½á£º
+æ€»ç»“ï¼š
 git stash
 git pull
-git stash pop stash@{0}	//git stash list ²é¿´Ôİ´æÁĞ±í
-ĞŞ¸Ä³åÍ»
+git stash pop stash@{0}	//git stash list æŸ¥çœ‹æš‚å­˜åˆ—è¡¨
+ä¿®æ”¹å†²çª
 git add
-git commit -m //git commit --amendĞŞ¸Ä´íÎóÌáÊ¾
+git commit -m //git commit --amendä¿®æ”¹é”™è¯¯æç¤º
 git push
 
-git log --graph	//²é¿´·ÖÖ§ºÏ²¢Í¼
+git log --graph	//æŸ¥çœ‹åˆ†æ”¯åˆå¹¶å›¾
 https://101.201.236.144/
 
 
@@ -393,86 +393,86 @@ https://101.201.236.144/
 
 ***********************
 **
-¶Ô¹¤×÷ÇøÖĞÎÄ¼şµÄĞŞ¸Ä·ÖÎªÈıÖÖÇé¿ö£º
+å¯¹å·¥ä½œåŒºä¸­æ–‡ä»¶çš„ä¿®æ”¹åˆ†ä¸ºä¸‰ç§æƒ…å†µï¼š
 
-£¨1£©ĞŞ¸Ä£¬µ«Ã»ÓĞÓÃgit add½«ĞŞ¸ÄÌí¼Óµ½Ôİ´æÇø£»
+ï¼ˆ1ï¼‰ä¿®æ”¹ï¼Œä½†æ²¡æœ‰ç”¨git addå°†ä¿®æ”¹æ·»åŠ åˆ°æš‚å­˜åŒºï¼›
 
-£¨2£©ĞŞ¸Ä£¬ÒÑ¾­Ê¹ÓÃgit add½«ĞŞ¸ÄÌí¼Óµ½Ôİ´æÇø£»
+ï¼ˆ2ï¼‰ä¿®æ”¹ï¼Œå·²ç»ä½¿ç”¨git addå°†ä¿®æ”¹æ·»åŠ åˆ°æš‚å­˜åŒºï¼›
 
-£¨3£©ĞŞ¸Ä£¬ÒÑ¾­Ê¹ÓÃgit add½«ĞŞ¸ÄÌí¼Óµ½Ôİ´æÇø£¬²¢ÔÙ´Î½øĞĞĞŞ¸Ä¡£
+ï¼ˆ3ï¼‰ä¿®æ”¹ï¼Œå·²ç»ä½¿ç”¨git addå°†ä¿®æ”¹æ·»åŠ åˆ°æš‚å­˜åŒºï¼Œå¹¶å†æ¬¡è¿›è¡Œä¿®æ”¹ã€‚
 
-¶ÔÓÚµÚÒ»ÖÖÇé¿ö£¬Ö±½ÓÊ¹ÓÃgit checkout -- <path> ÎÄ¼ş£¬¼´¿É³·ÏúĞŞ¸Ä£¬³·ÏúĞŞ¸Ä¾Í»Øµ½ºÍ°æ±¾¿âÒ»Ä£Ò»ÑùµÄÑù×Ó¡£
+å¯¹äºç¬¬ä¸€ç§æƒ…å†µï¼Œç›´æ¥ä½¿ç”¨git checkout -- <path> æ–‡ä»¶ï¼Œå³å¯æ’¤é”€ä¿®æ”¹ï¼Œæ’¤é”€ä¿®æ”¹å°±å›åˆ°å’Œç‰ˆæœ¬åº“ä¸€æ¨¡ä¸€æ ·çš„æ ·å­ã€‚
 
-µÚ¶şÖÖÇé¿ö£¬Ê¹ÓÃgit reset HEAD <path> ÎÄ¼ş, ¿É²»¼ÓHEAD£¬µ«ÊÇcmd±à¼­Æ÷»áÏÔÊ¾ÓĞHEAD¡£
+ç¬¬äºŒç§æƒ…å†µï¼Œä½¿ç”¨git reset HEAD <path> æ–‡ä»¶, å¯ä¸åŠ HEADï¼Œä½†æ˜¯cmdç¼–è¾‘å™¨ä¼šæ˜¾ç¤ºæœ‰HEADã€‚
 
-µÚÈıÖÖÇé¿ö ÏÈÊ¹ÓÃgit checkout -- <path> ÎÄ¼ş£¬ÎÄ¼ş¾Í»á±ä³ÉÌí¼Óµ½Ôİ´æÇøºóµÄ×´Ì¬£¬Ò²¾Í×ª»»³ÉÁË¡°µÚ¶şÖÖÇé¿ö¡±¡£
+ç¬¬ä¸‰ç§æƒ…å†µ å…ˆä½¿ç”¨git checkout -- <path> æ–‡ä»¶ï¼Œæ–‡ä»¶å°±ä¼šå˜æˆæ·»åŠ åˆ°æš‚å­˜åŒºåçš„çŠ¶æ€ï¼Œä¹Ÿå°±è½¬æ¢æˆäº†â€œç¬¬äºŒç§æƒ…å†µâ€ã€‚
 
-×ÜÖ®£¬¼Ç×¡Ò»µã£º¡°git checkout -- <path>ÎÄ¼ş¡±ÃüÁî£¬³·ÏúµÄÊÇ¹¤×÷ÖĞÎÄ¼şµÄĞŞ¸Ä£¬¶ø¡°git reset HEAD -- ÎÄ¼ş¡±ÃüÁî£¬³·ÏúµÄÊÇÔİ´æÇøÖĞÎÄ¼şµÄĞŞ¸Ä¡£
+æ€»ä¹‹ï¼Œè®°ä½ä¸€ç‚¹ï¼šâ€œgit checkout -- <path>æ–‡ä»¶â€å‘½ä»¤ï¼Œæ’¤é”€çš„æ˜¯å·¥ä½œä¸­æ–‡ä»¶çš„ä¿®æ”¹ï¼Œè€Œâ€œgit reset HEAD -- æ–‡ä»¶â€å‘½ä»¤ï¼Œæ’¤é”€çš„æ˜¯æš‚å­˜åŒºä¸­æ–‡ä»¶çš„ä¿®æ”¹ã€‚
 
 *************************
-*****ng installºó£¬µÇÂ¼¼ÓÃÜÒÀÀµ keythereum crypto-browserify*****
+*****ng installåï¼Œç™»å½•åŠ å¯†ä¾èµ– keythereum crypto-browserify*****
 
 ******************************************
 ******************************************
-commit id´Ó0¿ªÊ¼¼ÆËã
-// »ØÍËµ½ÉÏÒ»¸öcommit°æ±¾, HEADÑÏ¸ñÀ´Ëµ²»ÊÇÖ¸ÏòÌá½»£¬¶øÊÇÖ¸Ïòmaster£¬master²ÅÊÇÖ¸ÏòÌá½»µÄ£¬ËùÒÔ£¬HEADÖ¸ÏòµÄ¾ÍÊÇµ±Ç°·ÖÖ§¡£
+commit idä»0å¼€å§‹è®¡ç®—
+// å›é€€åˆ°ä¸Šä¸€ä¸ªcommitç‰ˆæœ¬, HEADä¸¥æ ¼æ¥è¯´ä¸æ˜¯æŒ‡å‘æäº¤ï¼Œè€Œæ˜¯æŒ‡å‘masterï¼Œmasteræ‰æ˜¯æŒ‡å‘æäº¤çš„ï¼Œæ‰€ä»¥ï¼ŒHEADæŒ‡å‘çš„å°±æ˜¯å½“å‰åˆ†æ”¯ã€‚
 $ git reset --hard HEAD^
 HEAD is now at ea34578 add distributed
 
-git reset --hard 3628164»ØÍËµ½Ä³¸ö°æ±¾
+git reset --hard 3628164å›é€€åˆ°æŸä¸ªç‰ˆæœ¬
 
-git reflogÓÃÀ´¼ÇÂ¼ÄãµÄÃ¿Ò»´ÎÃüÁî
+git reflogç”¨æ¥è®°å½•ä½ çš„æ¯ä¸€æ¬¡å‘½ä»¤
 
-Ìá½»ºó£¬ÓÃgit diff HEAD -- readme.txtÃüÁî¿ÉÒÔ²é¿´¹¤×÷ÇøºÍ°æ±¾¿âÀïÃæ×îĞÂ°æ±¾µÄÇø±ğ
+æäº¤åï¼Œç”¨git diff HEAD -- readme.txtå‘½ä»¤å¯ä»¥æŸ¥çœ‹å·¥ä½œåŒºå’Œç‰ˆæœ¬åº“é‡Œé¢æœ€æ–°ç‰ˆæœ¬çš„åŒºåˆ«
 
-git branchÃüÁî»áÁĞ³öËùÓĞ·ÖÖ§£¬µ±Ç°·ÖÖ§Ç°Ãæ»á±êÒ»¸ö*ºÅ
+git branchå‘½ä»¤ä¼šåˆ—å‡ºæ‰€æœ‰åˆ†æ”¯ï¼Œå½“å‰åˆ†æ”¯å‰é¢ä¼šæ ‡ä¸€ä¸ª*å·
 
-git log --graph --pretty=oneline --abbrev-commit ·ÖÖ§ºÏ²¢²é¿´
+git log --graph --pretty=oneline --abbrev-commit åˆ†æ”¯åˆå¹¶æŸ¥çœ‹
 
-git merge --no-ff -m "" branch-name ²ÎÊı¾Í¿ÉÒÔÓÃÆÕÍ¨Ä£Ê½ºÏ²¢,²¢ºóµÄÀúÊ·ÓĞ·ÖÖ§£¬ÄÜ¿´³öÀ´Ôø¾­×ö¹ıºÏ²¢,¶øfast forward¿´²»³ö
-git tag <tag name>		ÔÚÄ³·ÖÖ§´ò±êÇ©£¬ git tagÒ²¿ÉÒÔ²é¿´ËùÓĞ±êÇ©
-git show <tagname>or<commit id>	²é¿´±êÇ©ĞÅÏ¢£¬±êÇ©ÊÇ°´×ÖÄ¸Ë³Ğò£¬ git show¿ÉÒÔ²é¿´Ä³¸öcommitid¶ÔÓ¦µÄĞŞ¸Ä¼ÇÂ¼
-Èç¹ûÒªÍÆËÍÄ³¸ö±êÇ©µ½Ô¶³Ì£¬Ê¹ÓÃÃüÁîgit push origin <tagname>
-git check-ignore ²é¿´µ½µ×ÄÄ¸ö¹æÔòĞ´´í£¬git check-ignore -v App.class£¬App.class±¾À´ÊÇÒªadd£¬µ«ÊÇ±ÈÅäÁËºöÂÔÎÄ¼ş
+git merge --no-ff -m "" branch-name å‚æ•°å°±å¯ä»¥ç”¨æ™®é€šæ¨¡å¼åˆå¹¶,å¹¶åçš„å†å²æœ‰åˆ†æ”¯ï¼Œèƒ½çœ‹å‡ºæ¥æ›¾ç»åšè¿‡åˆå¹¶,è€Œfast forwardçœ‹ä¸å‡º
+git tag <tag name>		åœ¨æŸåˆ†æ”¯æ‰“æ ‡ç­¾ï¼Œ git tagä¹Ÿå¯ä»¥æŸ¥çœ‹æ‰€æœ‰æ ‡ç­¾
+git show <tagname>or<commit id>	æŸ¥çœ‹æ ‡ç­¾ä¿¡æ¯ï¼Œæ ‡ç­¾æ˜¯æŒ‰å­—æ¯é¡ºåºï¼Œ git showå¯ä»¥æŸ¥çœ‹æŸä¸ªcommitidå¯¹åº”çš„ä¿®æ”¹è®°å½•
+å¦‚æœè¦æ¨é€æŸä¸ªæ ‡ç­¾åˆ°è¿œç¨‹ï¼Œä½¿ç”¨å‘½ä»¤git push origin <tagname>
+git check-ignore æŸ¥çœ‹åˆ°åº•å“ªä¸ªè§„åˆ™å†™é”™ï¼Œgit check-ignore -v App.classï¼ŒApp.classæœ¬æ¥æ˜¯è¦addï¼Œä½†æ˜¯æ¯”é…äº†å¿½ç•¥æ–‡ä»¶
 
-git-revert - Revert some existing commits¡£Èç¹ûÊ¹ÓÃÄ¬ÈÏµÄ×¢ÊÍ£¬¿ÉÒÔÔÚÃüÁîÖĞ¼ÓÉÏ--no-edit²ÎÊı
-git revert ÊÇÉú³ÉÒ»¸öĞÂµÄÌá½»À´³·ÏúÄ³´ÎÌá½»£¬´Ë´ÎÌá½»Ö®Ç°µÄcommit¶¼»á±»±£Áô£¬
-git revert HEAD~0ÊÇ³·Ïú×îĞÂµÄcommit£¬²»»áÓĞ³åÍ»£¬µ«ÊÇHEAD~1ÒÔºóµÄ¿ÉÄÜ»áÓĞ³åÍ»
+git-revert - Revert some existing commitsã€‚å¦‚æœä½¿ç”¨é»˜è®¤çš„æ³¨é‡Šï¼Œå¯ä»¥åœ¨å‘½ä»¤ä¸­åŠ ä¸Š--no-editå‚æ•°
+git revert æ˜¯ç”Ÿæˆä¸€ä¸ªæ–°çš„æäº¤æ¥æ’¤é”€æŸæ¬¡æäº¤ï¼Œæ­¤æ¬¡æäº¤ä¹‹å‰çš„commitéƒ½ä¼šè¢«ä¿ç•™ï¼Œ
+git revert HEAD~0æ˜¯æ’¤é”€æœ€æ–°çš„commitï¼Œä¸ä¼šæœ‰å†²çªï¼Œä½†æ˜¯HEAD~1ä»¥åçš„å¯èƒ½ä¼šæœ‰å†²çª
 
 
-git-reset - Reset current HEAD to the specified state¡£
-git reset£º1. ÎÄ¼ş´ÓÔİ´æÇø»ØÍËµ½¹¤×÷Çø 2. °æ±¾»ØÍË 
-git reset HEAD filename £º»ØÍËÎÄ¼ş£¨²»ÄÜÊ¹ÓÃ--soft£©£¬½«ÎÄ¼ş´ÓÔİ´æÇø»ØÍËµ½¹¤×÷Çø¡¡¡¡¡¡
-soft ²ÎÊı£ºgit reset --soft HEAD¡«1 ÒâÎª½«°æ±¾¿âÈí»ØÍË1¸ö°æ±¾£¬ËùÎ½Èí»ØÍË±íÊ¾½«±¾µØ°æ±¾¿âµÄÍ·Ö¸ÕëÈ«²¿ÖØÖÃµ½Ö¸¶¨°æ±¾£¬
-ÇÒ½«Õâ´ÎÌá½»Ö®ºóµÄËùÓĞ±ä¸ü¶¼ÒÆ¶¯µ½Ôİ´æÇø£¬Ôİ´æÇøÎÄ¼şÏÔÊ¾ÂÌÉ«
+git-reset - Reset current HEAD to the specified stateã€‚
+git resetï¼š1. æ–‡ä»¶ä»æš‚å­˜åŒºå›é€€åˆ°å·¥ä½œåŒº 2. ç‰ˆæœ¬å›é€€ 
+git reset HEAD filename ï¼šå›é€€æ–‡ä»¶ï¼ˆä¸èƒ½ä½¿ç”¨--softï¼‰ï¼Œå°†æ–‡ä»¶ä»æš‚å­˜åŒºå›é€€åˆ°å·¥ä½œåŒºã€€ã€€ã€€
+soft å‚æ•°ï¼šgit reset --soft HEADï½1 æ„ä¸ºå°†ç‰ˆæœ¬åº“è½¯å›é€€1ä¸ªç‰ˆæœ¬ï¼Œæ‰€è°“è½¯å›é€€è¡¨ç¤ºå°†æœ¬åœ°ç‰ˆæœ¬åº“çš„å¤´æŒ‡é’ˆå…¨éƒ¨é‡ç½®åˆ°æŒ‡å®šç‰ˆæœ¬ï¼Œ
+ä¸”å°†è¿™æ¬¡æäº¤ä¹‹åçš„æ‰€æœ‰å˜æ›´éƒ½ç§»åŠ¨åˆ°æš‚å­˜åŒºï¼Œæš‚å­˜åŒºæ–‡ä»¶æ˜¾ç¤ºç»¿è‰²
 
-Ä¬ÈÏµÄmixed²ÎÊı£º git reset HEAD¡«1 ÒâÎª½«°æ±¾¿â»ØÍË1¸ö°æ±¾£¬½«±¾µØ°æ±¾¿âµÄÍ·Ö¸ÕëÈ«²¿ÖØÖÃµ½Ö¸¶¨°æ±¾£¬ÇÒ»áÖØÖÃÔİ´æÇø£¬
-¼´Õâ´ÎÌá½»Ö®ºóµÄËùÓĞ±ä¸ü¶¼ÒÆ¶¯µ½Î´Ôİ´æ½×¶Î£¬¹¤×÷ÇøÎÄ¼şÏÔÊ¾ºìÉ«
+é»˜è®¤çš„mixedå‚æ•°ï¼š git reset HEADï½1 æ„ä¸ºå°†ç‰ˆæœ¬åº“å›é€€1ä¸ªç‰ˆæœ¬ï¼Œå°†æœ¬åœ°ç‰ˆæœ¬åº“çš„å¤´æŒ‡é’ˆå…¨éƒ¨é‡ç½®åˆ°æŒ‡å®šç‰ˆæœ¬ï¼Œä¸”ä¼šé‡ç½®æš‚å­˜åŒºï¼Œ
+å³è¿™æ¬¡æäº¤ä¹‹åçš„æ‰€æœ‰å˜æ›´éƒ½ç§»åŠ¨åˆ°æœªæš‚å­˜é˜¶æ®µï¼Œå·¥ä½œåŒºæ–‡ä»¶æ˜¾ç¤ºçº¢è‰²
 
-hard²ÎÊı£ºgit reset --hard HEAD¡«1 ÒâÎª½«°æ±¾¿â»ØÍË1¸ö°æ±¾£¬µ«ÊÇ²»½ö½öÊÇ½«±¾µØ°æ±¾¿âµÄÍ·Ö¸ÕëÈ«²¿ÖØÖÃµ½Ö¸¶¨°æ±¾£¬
-Ò²»áÖØÖÃÔİ´æÇø£¬²¢ÇÒ»á½«¹¤×÷Çø´úÂëÒ²»ØÍËµ½Õâ¸ö°æ±¾£¬¹¤×÷Çø¸É¾» 
+hardå‚æ•°ï¼šgit reset --hard HEADï½1 æ„ä¸ºå°†ç‰ˆæœ¬åº“å›é€€1ä¸ªç‰ˆæœ¬ï¼Œä½†æ˜¯ä¸ä»…ä»…æ˜¯å°†æœ¬åœ°ç‰ˆæœ¬åº“çš„å¤´æŒ‡é’ˆå…¨éƒ¨é‡ç½®åˆ°æŒ‡å®šç‰ˆæœ¬ï¼Œ
+ä¹Ÿä¼šé‡ç½®æš‚å­˜åŒºï¼Œå¹¶ä¸”ä¼šå°†å·¥ä½œåŒºä»£ç ä¹Ÿå›é€€åˆ°è¿™ä¸ªç‰ˆæœ¬ï¼Œå·¥ä½œåŒºå¹²å‡€ 
 
-git remoteÃüÁîÁĞ³öËùÓĞÔ¶³ÌÖ÷»ú ,Ê¹ÓÃ-vÑ¡Ïî£¬¿ÉÒÔ²Î¿´Ô¶³ÌÖ÷»úµÄÍøÖ·¡£
-git remote show <Ö÷»úÃû>
+git remoteå‘½ä»¤åˆ—å‡ºæ‰€æœ‰è¿œç¨‹ä¸»æœº ,ä½¿ç”¨-vé€‰é¡¹ï¼Œå¯ä»¥å‚çœ‹è¿œç¨‹ä¸»æœºçš„ç½‘å€ã€‚
+git remote show <ä¸»æœºå>
 
-git checkout <commit> -- <filename> ´ÓÄ³¸öcomitid¼ì³öÄ³¸öÎÄ¼ş
+git checkout <commit> -- <filename> ä»æŸä¸ªcomitidæ£€å‡ºæŸä¸ªæ–‡ä»¶
 
-git checkout -b local-branch-name origin/branch-name À­È¡Ô¶³ÌÄ³·ÖÖ§´úÂë£¬´´½¨²¢ÇĞ»»µ½·ÖÖ§branch-name
-git checkcout -b local-branch-name  ÔÚµ±Ç°·ÖÖ§´´½¨²¢ÇĞ»»µ½ĞÂ·ÖÖ§
-git checkcout commitid -b local-branch-name  ÔÚµ±Ç°·ÖÖ§µÄÄ³¸öÀúÊ·Ìá½»µã»ù´¡ÉÏ´´½¨²¢ÇĞ»»µ½ĞÂ·ÖÖ§
-git merge branchnameºÏ²¢·ÖÖ§µ½µ±Ç°·ÖÖ§
-git push origin local-branch-name ÔÚ·ÖÖ§ÏÂÌá½»´úÂëµ½Ô¶³Ì²Ö¿â£¬²»ÄÜÖ»Git push£¬ÒªÖ¸¶¨Ô¶³Ì·ÖÖ§Ãû³Æ
-git log --graph --pretty=oneline --abbrev-commit ²é¿´·ÖÖ§ºÏ²¢Çé¿ö
+git checkout -b local-branch-name origin/branch-name æ‹‰å–è¿œç¨‹æŸåˆ†æ”¯ä»£ç ï¼Œåˆ›å»ºå¹¶åˆ‡æ¢åˆ°åˆ†æ”¯branch-name
+git checkcout -b local-branch-name  åœ¨å½“å‰åˆ†æ”¯åˆ›å»ºå¹¶åˆ‡æ¢åˆ°æ–°åˆ†æ”¯
+git checkcout commitid -b local-branch-name  åœ¨å½“å‰åˆ†æ”¯çš„æŸä¸ªå†å²æäº¤ç‚¹åŸºç¡€ä¸Šåˆ›å»ºå¹¶åˆ‡æ¢åˆ°æ–°åˆ†æ”¯
+git merge branchnameåˆå¹¶åˆ†æ”¯åˆ°å½“å‰åˆ†æ”¯
+git push origin local-branch-name åœ¨åˆ†æ”¯ä¸‹æäº¤ä»£ç åˆ°è¿œç¨‹ä»“åº“ï¼Œä¸èƒ½åªGit pushï¼Œè¦æŒ‡å®šè¿œç¨‹åˆ†æ”¯åç§°
+git log --graph --pretty=oneline --abbrev-commit æŸ¥çœ‹åˆ†æ”¯åˆå¹¶æƒ…å†µ
 
-git tag -a v0.1 -m "version 0.1 released" 3628164 ´øÓĞËµÃ÷µÄ±êÇ©£¬ÓÃ-aÖ¸¶¨±êÇ©Ãû£¬-mÖ¸¶¨ËµÃ÷ÎÄ×Ö
-git show <tagname> ¿ÉÒÔ¿´µ½ËµÃ÷ÎÄ×Ö
-git push origin <tagname> ÍÆËÍÄ³¸ö±êÇ©µ½Ô¶³Ì£¬ ´ò±êÇ©µÄÊ±ºò×Ô¶¯±ê×¢¸Ã±êÇ©Îªrelease°æ±¾
-git push origin --tags Ò»´ÎĞÔÍÆËÍÈ«²¿ÉĞÎ´ÍÆËÍµ½Ô¶³ÌµÄ±¾µØ±êÇ©
+git tag -a v0.1 -m "version 0.1 released" 3628164 å¸¦æœ‰è¯´æ˜çš„æ ‡ç­¾ï¼Œç”¨-aæŒ‡å®šæ ‡ç­¾åï¼Œ-mæŒ‡å®šè¯´æ˜æ–‡å­—
+git show <tagname> å¯ä»¥çœ‹åˆ°è¯´æ˜æ–‡å­—
+git push origin <tagname> æ¨é€æŸä¸ªæ ‡ç­¾åˆ°è¿œç¨‹ï¼Œ æ‰“æ ‡ç­¾çš„æ—¶å€™è‡ªåŠ¨æ ‡æ³¨è¯¥æ ‡ç­¾ä¸ºreleaseç‰ˆæœ¬
+git push origin --tags ä¸€æ¬¡æ€§æ¨é€å…¨éƒ¨å°šæœªæ¨é€åˆ°è¿œç¨‹çš„æœ¬åœ°æ ‡ç­¾
 
 ******************************************
-jsÔ­ĞÍ
+jsåŸå‹
 ******************************************
-¹¹Ôìº¯Êı:
+æ„é€ å‡½æ•°:
 function Person(name, age, job) {
  this.name = name;
  this.age = age;
@@ -482,32 +482,32 @@ function Person(name, age, job) {
 var person1 = new Person('Zaxlct', 28, 'Software Engineer');
 
 
-Ã¿¸öº¯Êı¶ÔÏó¶¼ÓĞÒ»¸öprototype ÊôĞÔ,Õâ¸öÊôĞÔÖ¸Ïòº¯ÊıµÄÔ­ĞÍ¶ÔÏó¡£
+æ¯ä¸ªå‡½æ•°å¯¹è±¡éƒ½æœ‰ä¸€ä¸ªprototype å±æ€§,è¿™ä¸ªå±æ€§æŒ‡å‘å‡½æ•°çš„åŸå‹å¯¹è±¡ã€‚
 person1.constructor == Person
 Person.prototype.constructor == Person
 person1.__proto__ == Person.prototype
 
-person1 ÎªÊ²Ã´ÓĞ constructor ÊôĞÔ£¿ÄÇÊÇÒòÎª person1 ÊÇ Person µÄÊµÀı¡£
-Í¬Àí£¬ Person.prototype £¨Äã°ÑËüÏëÏó³É A£© Ò²ÊÇPerson µÄÊµÀı¡£
+person1 ä¸ºä»€ä¹ˆæœ‰ constructor å±æ€§ï¼Ÿé‚£æ˜¯å› ä¸º person1 æ˜¯ Person çš„å®ä¾‹ã€‚
+åŒç†ï¼Œ Person.prototype ï¼ˆä½ æŠŠå®ƒæƒ³è±¡æˆ Aï¼‰ ä¹Ÿæ˜¯Person çš„å®ä¾‹ã€‚
 
-Ô­ĞÍ¶ÔÏóÆäÊµ¾ÍÊÇÆÕÍ¨¶ÔÏó£¨µ«Function.prototype³ıÍâ£¬ËüÊÇº¯Êı¶ÔÏó£¬µ«ËüºÜÌØÊâ£¬ËûÃ»ÓĞprototypeÊôĞÔ
-£¨Ç°ÃæËµµÀº¯Êı¶ÔÏó¶¼ÓĞprototypeÊôĞÔ£©£©
+åŸå‹å¯¹è±¡å…¶å®å°±æ˜¯æ™®é€šå¯¹è±¡ï¼ˆä½†Function.prototypeé™¤å¤–ï¼Œå®ƒæ˜¯å‡½æ•°å¯¹è±¡ï¼Œä½†å®ƒå¾ˆç‰¹æ®Šï¼Œä»–æ²¡æœ‰prototypeå±æ€§
+ï¼ˆå‰é¢è¯´é“å‡½æ•°å¯¹è±¡éƒ½æœ‰prototypeå±æ€§ï¼‰ï¼‰
 
-½áÂÛ£ºÔ­ĞÍ¶ÔÏó£¨Person.prototype£©ÊÇ ¹¹Ôìº¯Êı£¨Person£©µÄÒ»¸öÊµÀı¡£
+ç»“è®ºï¼šåŸå‹å¯¹è±¡ï¼ˆPerson.prototypeï¼‰æ˜¯ æ„é€ å‡½æ•°ï¼ˆPersonï¼‰çš„ä¸€ä¸ªå®ä¾‹ã€‚
 
 function Person(){};
  console.log(Person.prototype) //Person{}
  console.log(typeof Person.prototype) //Object
- console.log(typeof Function.prototype) // Function£¬Õâ¸öÌØÊâ
+ console.log(typeof Function.prototype) // Functionï¼Œè¿™ä¸ªç‰¹æ®Š
  console.log(typeof Object.prototype) // Object
  console.log(typeof Function.prototype.prototype) //undefined
 
-JS ÔÚ´´½¨¶ÔÏó£¨²»ÂÛÊÇÆÕÍ¨¶ÔÏó»¹ÊÇº¯Êı¶ÔÏó£©µÄÊ±ºò£¬¶¼ÓĞÒ»¸ö½Ğ×ö__proto__ µÄÄÚÖÃÊôĞÔ£¬ÓÃÓÚÖ¸Ïò´´½¨ËüµÄ¹¹Ôìº¯ÊıµÄÔ­ĞÍ¶ÔÏó¡£
-¶ÔÏó person1 ÓĞÒ»¸ö __proto__ÊôĞÔ£¬´´½¨ËüµÄ¹¹Ôìº¯ÊıÊÇ Person£¬¹¹Ôìº¯ÊıµÄÔ­ĞÍ¶ÔÏóÊÇ Person.prototype £¬ËùÒÔ£º
+JS åœ¨åˆ›å»ºå¯¹è±¡ï¼ˆä¸è®ºæ˜¯æ™®é€šå¯¹è±¡è¿˜æ˜¯å‡½æ•°å¯¹è±¡ï¼‰çš„æ—¶å€™ï¼Œéƒ½æœ‰ä¸€ä¸ªå«åš__proto__ çš„å†…ç½®å±æ€§ï¼Œç”¨äºæŒ‡å‘åˆ›å»ºå®ƒçš„æ„é€ å‡½æ•°çš„åŸå‹å¯¹è±¡ã€‚
+å¯¹è±¡ person1 æœ‰ä¸€ä¸ª __proto__å±æ€§ï¼Œåˆ›å»ºå®ƒçš„æ„é€ å‡½æ•°æ˜¯ Personï¼Œæ„é€ å‡½æ•°çš„åŸå‹å¯¹è±¡æ˜¯ Person.prototype ï¼Œæ‰€ä»¥ï¼š
 person1.__proto__ == Person.prototype
 
-Function¶ÔÏó×÷ÎªÒ»¸öº¯Êı£¬¾Í»áÓĞprototypeÊôĞÔ£¬¸ÃÊôĞÔ½«¶ÔÓ¦¡±function () {}¡±¶ÔÏó¡£
-Function¶ÔÏó×÷ÎªÒ»¸ö¶ÔÏó£¬¾ÍÓĞ__proto__ÊôĞÔ£¬¸ÃÊôĞÔ¶ÔÓ¦¡±Function.prototype¡±£¬Ò²¾ÍÊÇËµ£¬¡±Function._proto_ === Function.prototype¡±¡£
+Functionå¯¹è±¡ä½œä¸ºä¸€ä¸ªå‡½æ•°ï¼Œå°±ä¼šæœ‰prototypeå±æ€§ï¼Œè¯¥å±æ€§å°†å¯¹åº”â€function () {}â€å¯¹è±¡ã€‚
+Functionå¯¹è±¡ä½œä¸ºä¸€ä¸ªå¯¹è±¡ï¼Œå°±æœ‰__proto__å±æ€§ï¼Œè¯¥å±æ€§å¯¹åº”â€Function.prototypeâ€ï¼Œä¹Ÿå°±æ˜¯è¯´ï¼Œâ€Function._proto_ === Function.prototypeâ€ã€‚
 
 var o = {};
   console.log(o.prototype); //undefined
@@ -515,7 +515,7 @@ var o = {};
   console.log(o.__proto__ === Object.prototype) //true
   console.log(Object === Object.prototype.constructor) //true 
   console.log(Object.prototype.constructor) //function Object()
-¡¡console.log(Object.prototype.__proto__); //null
+ã€€console.log(Object.prototype.__proto__); //null
 
 function Demo(){};
   var f1 = new Demo();
@@ -530,16 +530,16 @@ function f1(){};  ==  var f1 = new Function();
 function f2(a,b){
   alert(a+b);
 }
-µÈ¼ÛÓÚvar f2 = new Function(a,b,"alert(a+b)");
+ç­‰ä»·äºvar f2 = new Function(a,b,"alert(a+b)");
 
-×Ü½á£º
-1. ËùÓĞµÄ¶ÔÏó¶¼ÓĞ__proto__ÊôĞÔ£¬¸ÃÊôĞÔ¶ÔÓ¦¸Ã¶ÔÏóµÄÔ­ĞÍ.
-2. ËùÓĞµÄº¯Êı¶ÔÏó¶¼ÓĞprototypeÊôĞÔ£¬¸ÃÊôĞÔµÄÖµ»á±»¸³Öµ¸ø¸Ãº¯Êı´´½¨µÄ¶ÔÏóµÄ_proto_ÊôĞÔ.
-3. ËùÓĞµÄÔ­ĞÍ¶ÔÏó¶¼ÓĞconstructorÊôĞÔ£¬¸ÃÊôĞÔ¶ÔÓ¦´´½¨ËùÓĞÖ¸Ïò¸ÃÔ­ĞÍµÄÊµÀıµÄ¹¹Ôìº¯Êı.
-4. º¯Êı¶ÔÏóºÍÔ­ĞÍ¶ÔÏóÍ¨¹ıprototypeºÍconstructorÊôĞÔ½øĞĞÏà»¥¹ØÁª.
+æ€»ç»“ï¼š
+1. æ‰€æœ‰çš„å¯¹è±¡éƒ½æœ‰__proto__å±æ€§ï¼Œè¯¥å±æ€§å¯¹åº”è¯¥å¯¹è±¡çš„åŸå‹.
+2. æ‰€æœ‰çš„å‡½æ•°å¯¹è±¡éƒ½æœ‰prototypeå±æ€§ï¼Œè¯¥å±æ€§çš„å€¼ä¼šè¢«èµ‹å€¼ç»™è¯¥å‡½æ•°åˆ›å»ºçš„å¯¹è±¡çš„_proto_å±æ€§.
+3. æ‰€æœ‰çš„åŸå‹å¯¹è±¡éƒ½æœ‰constructorå±æ€§ï¼Œè¯¥å±æ€§å¯¹åº”åˆ›å»ºæ‰€æœ‰æŒ‡å‘è¯¥åŸå‹çš„å®ä¾‹çš„æ„é€ å‡½æ•°.
+4. å‡½æ•°å¯¹è±¡å’ŒåŸå‹å¯¹è±¡é€šè¿‡prototypeå’Œconstructorå±æ€§è¿›è¡Œç›¸äº’å…³è”.
 
-µÚÒ»ÖÖÊÇ==±È½Ï£¬Ëü»á×Ô¶¯×ª»»Êı¾İÀàĞÍÔÙ±È½Ï£¬ºÜ¶àÊ±ºò£¬»áµÃµ½·Ç³£¹îÒìµÄ½á¹û¡£
-µÚ¶şÖÖÊÇ===±È½Ï£¬Ëü²»»á×Ô¶¯×ª»»Êı¾İÀàĞÍ£¬Èç¹ûÊı¾İÀàĞÍ²»Ò»ÖÂ£¬·µ»Øfalse£¬Èç¹ûÒ»ÖÂ£¬ÔÙ±È½Ï¡£
-JavaScript°Ñnull¡¢undefined¡¢0¡¢NaNºÍ¿Õ×Ö·û´®''ÊÓÎªfalse£¬ÆäËûÖµÒ»¸ÅÊÓÎªtrue¡£
+ç¬¬ä¸€ç§æ˜¯==æ¯”è¾ƒï¼Œå®ƒä¼šè‡ªåŠ¨è½¬æ¢æ•°æ®ç±»å‹å†æ¯”è¾ƒï¼Œå¾ˆå¤šæ—¶å€™ï¼Œä¼šå¾—åˆ°éå¸¸è¯¡å¼‚çš„ç»“æœã€‚
+ç¬¬äºŒç§æ˜¯===æ¯”è¾ƒï¼Œå®ƒä¸ä¼šè‡ªåŠ¨è½¬æ¢æ•°æ®ç±»å‹ï¼Œå¦‚æœæ•°æ®ç±»å‹ä¸ä¸€è‡´ï¼Œè¿”å›falseï¼Œå¦‚æœä¸€è‡´ï¼Œå†æ¯”è¾ƒã€‚
+JavaScriptæŠŠnullã€undefinedã€0ã€NaNå’Œç©ºå­—ç¬¦ä¸²''è§†ä¸ºfalseï¼Œå…¶ä»–å€¼ä¸€æ¦‚è§†ä¸ºtrueã€‚
 
 ******************************************
