@@ -455,6 +455,8 @@ hard参数：git reset --hard HEAD～1 意为将版本库回退1个版本，但是不仅仅是将本地版
 git remote命令列出所有远程主机 ,使用-v选项，可以参看远程主机的网址。
 git remote show <主机名>
 
+git checkout <commit> -- <filename> 从某个comitid检出某个文件
+
 git checkout -b local-branch-name origin/branch-name 拉取远程某分支代码，创建并切换到分支branch-name
 git checkcout -b local-branch-name  在当前分支创建并切换到新分支
 git checkcout commitid -b local-branch-name  在当前分支的某个历史提交点基础上创建并切换到新分支
@@ -541,7 +543,3 @@ function f2(a,b){
 JavaScript把null、undefined、0、NaN和空字符串''视为false，其他值一概视为true。
 
 ******************************************
-line3
-line4
-line5
-line6
