@@ -209,6 +209,7 @@ ionic g pipe YourPipeName //创建过滤器
 
 8. 安装typescript
 npm install -g typescript
+tsc xx.ts 编译成xx.js文件
 
 
 9. CLASSPATH
@@ -509,13 +510,25 @@ person1.__proto__ == Person.prototype
 Function对象作为一个函数，就会有prototype属性，该属性将对应”function () {}”对象。
 Function对象作为一个对象，就有__proto__属性，该属性对应”Function.prototype”，也就是说，”Function._proto_ === Function.prototype”。
 
-var o = {};
-  console.log(o.prototype); //undefined
-  console.log(o instanceof Object); //true
-  console.log(o.__proto__ === Object.prototype) //true
-  console.log(Object === Object.prototype.constructor) //true 
-  console.log(Object.prototype.constructor) //function Object()
-　console.log(Object.prototype.__proto__); //null
+
+创建Array对象：
+var arr = [1, 2, 3];
+原型链：o ----> Array.prototype ----> Object.prototype ----> null
+
+创建函数对象：
+function foo() {
+    return 0;
+}
+原型链：foo ----> Function.prototype ----> Object.prototype ----> null
+******************************************************************************
+
+ var o = {};
+    console.log(o.prototype); // undefined
+    console.log(o instanceof Object); // true
+    console.log(o.__proto__ === Object.prototype); // true
+    console.log(Object === Object.prototype.constructor); // true
+    console.log(Object.prototype.constructor); // function Object()
+    console.log(Object.prototype.__proto__); // null
 
 function Demo(){};
   var f1 = new Demo();
